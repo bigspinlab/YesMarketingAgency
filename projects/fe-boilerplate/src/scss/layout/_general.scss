@@ -4,23 +4,6 @@
   box-sizing: border-box;
 }
 
-input,
-button,
-select,
-textarea {
-  @extend %outline-a11y;
-}
-
-[tabindex] {
-  @extend %outline-a11y;
-}
-
-a {
-  @extend %outline-a11y;
-  color: inherit;
-  text-decoration: none;
-}
-
 //remove default styles
 input,
 button,
@@ -84,13 +67,14 @@ sup {
 
 //layout
 body {
-  @extend %body-layout;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden; //FIX prevent scroll from animations
 }
 
 .wrapper {
-  @extend %wrapper-layout;
+  flex: 1 0 auto; //FIX WEBKIT based browsers bug from letting these items shrink to smaller than their content's default minimum size.
 }
 
-.footer {
-  @extend %footer-layout;
-}
+

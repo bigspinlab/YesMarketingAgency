@@ -72,7 +72,8 @@ html {
 
   &__accordion {
     max-width: 80%;
-    @extend %block-center;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

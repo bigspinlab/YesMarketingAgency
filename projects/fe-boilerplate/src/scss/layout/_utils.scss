@@ -34,10 +34,6 @@
   padding: 0;
 }
 
-.x-center {
-  @extend %block-center;
-}
-
 .no-scroll {
   &-hidden {
     overflow: hidden;
@@ -87,5 +83,3 @@ img {
     @include border-radius(50%);
   }
 }
-
-@include spinner(1, var(--white));
