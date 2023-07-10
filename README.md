@@ -1,6 +1,6 @@
 <img alt="Mockup" src="/readme.assets/cover.png">
 
-## 💇🏻‍♂️ About the project
+## 💇🏻‍♂️ About this repo
 
 This is a monorepo that holds all freelance work that I've done for Yes Marketing Agency.
 
