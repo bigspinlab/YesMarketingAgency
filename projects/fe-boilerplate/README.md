@@ -21,6 +21,8 @@ This boilerplate allows you to have a quickly start in building your website for
   - `npm i -g npm gulp gulp-cli` (if is your first project using npm and gulp)
   - `npm i`
   - `gulp build` to compile files to `dist` folder
+- In case you need to install a third part dependency, remember to add it on config scripts.js and styles.js file the node module path to vendors config.
+- In case you are not using third part packages, just remove the import vendors from the build.
 
 ## Features
 

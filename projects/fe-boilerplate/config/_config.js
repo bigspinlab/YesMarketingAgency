@@ -15,7 +15,11 @@ export const config = {
     },
     dist: {
       app: 'dist/assets/js/app/',
-    }
+    },
+    vendor: [
+      //ADD VENDORS HERE - path from Node_modules path
+      //path.join(__dirname, 'node_modules', 'fever-cookies-plugin', 'dist', 'js', 'cookie.min.js') // USE IF USING COOKIES
+    ]
   },
   json: {
     src: 'src/json/*.json',
@@ -43,7 +47,11 @@ export const config = {
 
     dist: {
       dest: 'dist/assets/css/',
-    }
+    },
+    vendor: [
+      //ADD VENDORS HERE - path from Node_modules folder
+      //path.join(__dirname, 'node_modules', 'fever-cookies-plugin', 'dist', 'css', 'cookie.min.css') // USE IF USING COOKIES
+    ]
   },
   pdfs: {
     src: 'src/pdf/**/*.pdf',

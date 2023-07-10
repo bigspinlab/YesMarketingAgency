@@ -19,6 +19,7 @@ const coreStyles = (basename, source, dist) =>
     .pipe(dest(dist, { sourcemaps: '.' }));
 
 const styles = done => {
+  //coreStyles('vendor', config.styles.vendor, config.styles.dist.vendor);
   coreStyles('styles', config.styles.app.src, config.styles.dist.dest);
   coreStyles('styleguide', config.styles.app.srcSG, config.styles.dist.dest);
   done();
