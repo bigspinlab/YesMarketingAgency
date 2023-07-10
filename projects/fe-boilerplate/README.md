@@ -18,8 +18,8 @@ This boilerplate allows you to have a quickly start in building your website for
 - Open the Project with your favorite IDE
 - Run the Shell
 - In the Shell run the following commands:
-  - `pnpm i -g pnpm gulp gulp-cli` (if is your first project using npm and gulp)
-  - `pnpm i`
+  - `npm i -g npm gulp gulp-cli` (if is your first project using npm and gulp)
+  - `npm i`
   - `gulp build` to compile files to `dist` folder
 
 ## Features
