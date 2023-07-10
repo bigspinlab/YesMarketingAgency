@@ -5,47 +5,10 @@
   clip-path: inset(50%);
   border: 0;
   white-space: nowrap;
-
-  &-focusable {
-    &:active,
-    &:focus {
-      @include size(auto);
-      overflow: visible;
-      clip-path: none;
-      white-space: normal;
-    }
-  }
 }
 
 .d-none {
   display: none;
-}
-
-//prevent transition
-.no-transition {
-  transition: none;
-}
-
-.no-margin {
-  margin: 0;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-.no-scroll {
-  &-hidden {
-    overflow: hidden;
-  }
-
-  &.show-scrollbar {
-    overflow-y: scroll;
-  }
-
-  &-fixed {
-    @include fixed(top 0 right 0 bottom 0 left 0);
-  }
 }
 
 img {
@@ -77,9 +40,5 @@ img {
   &-full {
     @include size(100%);
     display: block;
-  }
-
-  &-circle {
-    @include border-radius(50%);
   }
 }

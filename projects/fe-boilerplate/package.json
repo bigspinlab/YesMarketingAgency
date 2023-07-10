@@ -34,9 +34,6 @@
     "postcss": "^8.4.25",
     "sass": "^1.63.6"
   },
-  "dependencies": {
-    "@pnpm/global-bin-dir": "^3.0.1"
-  },
   "browserslist": [
     "last 3 versions",
     "not dead"
