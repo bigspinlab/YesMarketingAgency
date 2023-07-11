@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+//remove default styles
+input,
+button,
+select,
+textarea {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  appearance: none;
+}
+
+input {
+  &[type='radio'],
+  &[type='checkbox'],
+  &[type='file'] {
+    @extend %hide-element;
+  }
+
+  &[type='search'] {
+    //remove X from Chrome
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
+  }
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+em {
+  font-style: italic;
+}
+
+small,
+sub,
+sup {
+  font-size: 0.83em;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+sup {
+  vertical-align: super;
+}
+
+// style when selected mouse
+::selection {
+  background-color: var(--selection);
+  color: var(--white);
+}
+
+//layout
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden; //FIX prevent scroll from animations
+}
+
+.wrapper {
+  flex: 1 0 auto; //FIX WEBKIT based browsers bug from letting these items shrink to smaller than their content's default minimum size.
+}
+
+

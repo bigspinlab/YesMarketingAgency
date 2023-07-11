@@ -1,0 +1,15 @@
+{
+	"styleguide": {
+		"templates": [
+			{
+				"href": "home",
+				"status": "not-started",
+				"name": "Homepage",
+				"observations": "N/A"
+			}
+		],
+		"modules": [
+			{}
+		]
+	}
+}

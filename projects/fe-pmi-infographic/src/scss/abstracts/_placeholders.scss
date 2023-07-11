@@ -1,0 +1,17 @@
+%hide-element {
+  @include absolute(left -9999.9rem);
+}
+
+%grid-spacing-small {
+  padding: 1.5rem;
+
+  @include bp('medium') {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+
+  @include bp('large') {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
