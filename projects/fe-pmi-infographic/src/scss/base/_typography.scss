@@ -18,7 +18,7 @@ body {
 
 // blocks sort by order A-Z
 
-.text-regular {
+.text {
   font-size: 2.3rem;
   line-height: 3.2rem;
 
@@ -28,6 +28,35 @@ body {
   }
 }
 
-.text--soft-white-original {
+.headline {
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+
+  @include bp('medium') {
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+  }
+}
+
+.font-family-regular {
+  font-family: var(--iqos-regular);
+}
+
+.font-family-bold {
+  font-family: var(--iqos-bold);
+}
+
+.font-family-light {
+  font-family: var(--iqos-light);
+}
+
+.color-soft-white-original {
   color: var(--soft-white-original);
 }
+
+.color-slate-original {
+  color: var(--slate-original);
+}
+
+
+
