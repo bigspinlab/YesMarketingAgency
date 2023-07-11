@@ -40,14 +40,17 @@ body {
 
 .font-family-regular {
   font-family: var(--iqos-regular);
+  font-weight: 400;
 }
 
 .font-family-bold {
   font-family: var(--iqos-bold);
+  font-weight: 700;
 }
 
 .font-family-light {
   font-family: var(--iqos-light);
+  font-weight: 300;
 }
 
 .color-soft-white-original {
