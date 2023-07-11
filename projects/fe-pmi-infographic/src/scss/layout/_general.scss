@@ -20,6 +20,7 @@ textarea {
 }
 
 input {
+
   &[type='radio'],
   &[type='checkbox'],
   &[type='file'] {
@@ -27,6 +28,7 @@ input {
   }
 
   &[type='search'] {
+
     //remove X from Chrome
     &::-webkit-search-decoration,
     &::-webkit-search-cancel-button,
@@ -66,15 +68,21 @@ sup {
 }
 
 //layout
+html,
 body {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
-  overflow-x: hidden; //FIX prevent scroll from animations
+  width: 100vw;
+  overscroll-behavior: none;
+  overflow: hidden;
 }
 
 .wrapper {
-  flex: 1 0 auto; //FIX WEBKIT based browsers bug from letting these items shrink to smaller than their content's default minimum size.
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+  -webkit-overscroll-behavior: none;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
 }
-
-
