@@ -1,0 +1,43 @@
+.jumbotron {
+
+  &-text {
+    width: 100%;
+  }
+
+  &-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+
+    &__icon {
+      margin-bottom: 2.8rem;
+
+      @include bp('medium') {
+        margin-bottom: 3.8rem;
+      }
+
+    }
+
+    &--large {
+      @include bp('medium') {
+        padding: 10%;
+      }
+    }
+
+    &--small {
+      @include bp('medium') {
+        padding: 15%;
+      }
+    }
+  }
+
+  &-span-small {
+    margin-bottom: 1.8rem;
+
+    @include bp('medium') {
+      margin-bottom: 2.8rem;
+    }
+  }
+}
