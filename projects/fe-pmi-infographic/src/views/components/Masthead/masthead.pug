@@ -1,6 +1,10 @@
 section.masthead 
   article.masthead-article-image
-    .masthead-background 
+    .masthead-background
+      picture 
+        source(srcset="/assets/img/content/the-pmi.png", media="(min-width: 768px)")
+        source(srcset="/assets/img/content/mobile-the-pmi.png", media="(min-width: 576px)")
+        img(src="/assets/img/content/mobile-the-pmi.png")
     .masthead-logo-image
   article.masthead-article-content.background-blue-original
     h1.headline.font-family-bold.color-soft-white-original A PMI é muito mais do que uma empresa de tabaco.
