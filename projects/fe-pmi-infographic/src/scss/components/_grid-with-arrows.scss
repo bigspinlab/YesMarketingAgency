@@ -1,0 +1,61 @@
+.grid-with-arrows {
+  width: 100%;
+
+  &__article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+  }
+
+  &__headline-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+
+    @include bp('large') {
+      padding: 20% 10%;
+      max-width: 70%;
+    }
+
+    .headline {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include bp('large') {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &--inverted {
+      @include bp('large') {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__content {
+    padding: 5%;
+
+    @include bp('large') {
+      padding: 15% 10%;
+    }
+  }
+
+  &__svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 31.5rem;
+
+    @include bp('large') {
+      min-width: 50%;
+    }
+  }
+}
