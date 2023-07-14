@@ -10,11 +10,17 @@
   }
 
   &__headline {
-    padding: 10% 5%;
+    padding: 10% 4%;
+    max-width: 40rem;
+
+    @include bp('medium') {
+      padding: 10% 0 10% 10%;
+      max-width: 70rem;
+    }
 
     @include bp('large') {
-      padding: 20% 10%;
-      max-width: 70%;
+      padding: 23rem 0 23rem 10%;
+      max-width: 80rem;
     }
 
     span {
@@ -60,7 +66,7 @@
     padding: 20% 12%;
 
     @include bp('large') {
-      padding-left: 10%;
+      padding: 10rem 10%;
     }
   }
 

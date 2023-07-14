@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20% 5%;
+    padding: 20% 4%;
 
     &__icon {
       width: 9rem;
@@ -31,11 +31,11 @@
 
     &--large {
       @include bp('medium') {
-        padding: 10%;
+        padding: 15rem 10%;
       }
 
       @include bp('wide') {
-        padding: 10% 0;
+        padding: 18rem 0;
         max-width: 115rem;
         margin: 0 auto;
       }
@@ -43,11 +43,11 @@
 
     &--medium {
       @include bp('medium') {
-        padding: 15%;
+        padding: 15rem 15%;
       }
 
       @include bp('wide') {
-        padding: 15% 0;
+        padding: 18rem 0;
         max-width: 93rem;
         margin: 0 auto;
       }
@@ -55,11 +55,11 @@
 
     &--small {
       @include bp('medium') {
-        padding: 15%;
+        padding: 15rem 15%;
       }
 
       @include bp('wide') {
-        padding: 15% 0;
+        padding: 18rem 0;
         max-width: 75rem;
         margin: 0 auto;
       }

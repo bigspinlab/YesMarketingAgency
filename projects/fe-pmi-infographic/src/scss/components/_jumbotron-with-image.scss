@@ -25,14 +25,14 @@
   &__content-wrapper {
     max-width: 31rem;
     margin: 0 auto;
-    padding: 10% 5% 0 5%;
+    padding: 10% 4% 0 4%;
 
     @include bp('small') {
       max-width: 35rem;
     }
 
     @include bp('medium') {
-      padding-top: 20%;
+      padding-top: 20rem;
       padding-left: 0;
       padding-right: 0;
       max-width: 70rem;

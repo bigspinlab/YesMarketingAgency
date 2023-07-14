@@ -13,11 +13,16 @@
   }
 
   &__headline {
-    padding: 20% 5%;
+    padding: 20% 4%;
+    max-width: 45rem;
+
+    @include bp('medium') {
+      padding: 26rem 0 15rem 10%;
+      max-width: 80rem;
+    }
 
     @include bp('large') {
-      padding: 20% 10% 10% 10%;
-      max-width: 70%;
+      max-width: 90rem;
     }
 
     span {

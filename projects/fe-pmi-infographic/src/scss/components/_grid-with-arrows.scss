@@ -11,11 +11,12 @@
   &__headline-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 10% 5%;
+    padding: 10% 4%;
+    max-width: 48rem;
 
-    @include bp('large') {
-      padding: 20% 10%;
-      max-width: 70%;
+    @include bp('medium') {
+      padding: 20rem 0 20rem 10%;
+      max-width: 80rem;
     }
 
     .headline {
@@ -32,6 +33,7 @@
           height: .5rem;
           width: 100%;
           background-color: var(--amber-original);
+          z-index: -1;
 
           @include bp('medium') {
             height: .8rem;
@@ -68,11 +70,7 @@
     padding: 25% 10%;
 
     @include bp('medium') {
-      padding: 20% 10%;
-    }
-
-    @include bp('large') {
-      padding: 15% 10%;
+      padding: 15rem 10%;
     }
   }
 
