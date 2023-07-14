@@ -55,6 +55,11 @@
           height: .5rem;
           width: 100%;
           background-color: var(--slate-original);
+
+          @include bp('medium') {
+            height: .8rem;
+            bottom: .6rem;
+          }
         }
       }
     }
