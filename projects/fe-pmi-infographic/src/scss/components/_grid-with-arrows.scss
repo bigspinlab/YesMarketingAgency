@@ -20,6 +20,25 @@
 
     .headline {
       margin-bottom: 6rem;
+
+      span {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: .2rem;
+          height: .5rem;
+          width: 100%;
+          background-color: var(--amber-original);
+
+          @include bp('medium') {
+            height: .8rem;
+            bottom: .6rem;
+          }
+        }
+      }
     }
   }
 
