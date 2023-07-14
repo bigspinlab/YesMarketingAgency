@@ -48,6 +48,10 @@
   &__content {
     padding: 25% 10%;
 
+    @include bp('medium') {
+      padding: 20% 10%;
+    }
+
     @include bp('large') {
       padding: 15% 10%;
     }
@@ -74,14 +78,26 @@
 
     .first-arrow {
       width: 15rem;
+
+      @include bp('large') {
+        width: 18rem;
+      }
     }
 
     .second-arrow {
       width: 13rem;
+
+      @include bp('large') {
+        width: 18rem;
+      }
     }
 
     .third-arrow {
       width: 20rem;
+
+      @include bp('large') {
+        width: 30rem;
+      }
     }
   }
 }

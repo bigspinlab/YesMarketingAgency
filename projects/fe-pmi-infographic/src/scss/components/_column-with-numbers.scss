@@ -18,7 +18,11 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 5%;
+    padding: 20% 5%;
+
+    @include bp('medium') {
+      padding: 10% 5%;
+    }
   }
 
   &__number  {
