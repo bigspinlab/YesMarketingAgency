@@ -1,23 +1,23 @@
 if isJumbotronWithSmallHeadline
   section.jumbotron-text.background-soft-white-original
     article.jumbotron-article.jumbotron-article--large
-      span.jumbotron-span-small.font-family-bold.color-slate-original Aposta na transformação
-      p.text.font-family-regular.color-slate-original.text-align-center Hoje em dia, a Philip Morris International é muito mais do que um empresa de cigarros. Na verdade, estamos a transformar a nossa empresa e a apostar o nosso futuro na substituição de cigarros por alternativas sem fumo.
+      span.jumbotron-span-small.font-family-bold.color-slate-original(data-gsap="fade-in") Aposta na transformação
+      p.text.font-family-regular.color-slate-original.text-align-center(data-gsap="fade-in" data-gsap-delay="500") Hoje em dia, a Philip Morris International é muito mais do que um empresa de cigarros. Na verdade, estamos a transformar a nossa empresa e a apostar o nosso futuro na substituição de cigarros por alternativas sem fumo.
 
 else if isJumbotronWithIcon
   section.jumbotron-text.background-soft-white-medium
     article.jumbotron-article.jumbotron-article--small
-      .jumbotron-article__icon 
+      .jumbotron-article__icon(data-gsap="fade-in")
         <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
           <path d="M74.2354 8.74628C67.1263 4.56705 58.8325 2.1543 50.0001 2.1543C23.5675 2.1543 2.15425 23.5675 2.15425 50.0001C2.15425 76.4326 23.5675 97.8458 50.0001 97.8458C76.4327 97.8458 97.8459 76.4326 97.8459 50.0001" stroke="#287BAF" stroke-width="4.30849" stroke-linecap="round"/>
           <path d="M70.0561 16.4374C64.2397 13.0121 57.4538 11.0518 50.2155 11.0518C28.5869 11.0518 11.0513 28.5873 11.0513 50.2159C11.0513 71.8445 28.5869 89.3801 50.2155 89.3801C71.8442 89.3801 89.3797 71.8445 89.3797 50.2159" stroke="white" stroke-width="4.30849" stroke-linecap="round"/>
           <path d="M26.7127 46.0579L46.0578 66.3077L95.11 15.8984" stroke="#287BAF" stroke-width="4.30849" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-      p.text.font-family-bold.color-slate-original.text-align-center Existem, atualmente, produtos cientificamente comprovados menos nocivos do que os cigarros, e que se encontram disponíveis para fumadores adultos que, de outra forma, continuariam a fumar.
+      p.text.font-family-bold.color-slate-original.text-align-center(data-gsap="fade-in" data-gsap-delay="500") Existem, atualmente, produtos cientificamente comprovados menos nocivos do que os cigarros, e que se encontram disponíveis para fumadores adultos que, de outra forma, continuariam a fumar.
 
 
 else if isJumbotronWithBlueBackground
   section.jumbotron-text.background-blue-light
     article.jumbotron-article.jumbotron-article--medium
-      p.text.font-family-regular.color-soft-white-original.text-align-center As nossas alternativas não combustíveis foram submetidas a sólidas avaliações científicas, incluindo, até à data, 18 estudos não clínicos e 10 estudos clínicos com milhares de participantes.
+      p.text.font-family-regular.color-soft-white-original.text-align-center(data-gsap="fade-in") As nossas alternativas não combustíveis foram submetidas a sólidas avaliações científicas, incluindo, até à data, 18 estudos não clínicos e 10 estudos clínicos com milhares de participantes.
 
