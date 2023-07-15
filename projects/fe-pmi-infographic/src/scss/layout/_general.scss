@@ -73,16 +73,9 @@ body {
   height: 100vh;
   width: 100vw;
   overscroll-behavior: none;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .wrapper {
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  height: 100vh;
-  width: 100vw;
-  -webkit-overscroll-behavior: none;
-  overscroll-behavior: none;
-  -webkit-overflow-scrolling: touch;
+  flex: 1 0 auto; //FIX WEBKIT based browsers bug from letting these items shrink to smaller than their content's default minimum size.
 }
