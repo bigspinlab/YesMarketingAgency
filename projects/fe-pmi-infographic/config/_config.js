@@ -15,10 +15,11 @@ export const config = {
     },
     dist: {
       app: 'dist/assets/js/app/',
+      vendor: 'dist/assets/js/vendor/'
     },
     vendor: [
       //ADD VENDORS HERE - path from Node_modules path
-      //path.join(__dirname, 'node_modules', 'fever-cookies-plugin', 'dist', 'js', 'cookie.min.js') // USE IF USING COOKIES
+      //path.join(__dirname, 'node_modules', 'countup.js', 'dist', 'countUp.min.js')
     ]
   },
   json: {

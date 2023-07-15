@@ -14,7 +14,7 @@ const coreScripts = (basename, source, dist) =>
     .pipe(dest(dist, { sourcemaps: '.' }));
 
 const scripts = done => {
-  //coreScripts('vendor', config.scripts.vendor, config.scripts.dist.vendor);
+  coreScripts('vendor', config.scripts.vendor, config.scripts.dist.vendor);
   coreScripts('app', config.scripts.app.src, config.scripts.dist.app);
   done();
 };
