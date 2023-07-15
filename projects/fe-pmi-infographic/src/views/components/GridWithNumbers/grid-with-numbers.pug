@@ -4,8 +4,8 @@ section.grid-with-numbers.background-soft-white-medium
       span certa.
     .grid-with-numbers__container 
       .grid-with-numbers__content.background-blue-original
-        .grid-with-numbers__number 
-          p.color-soft-white-original.font-family-bold 1
+        .grid-with-numbers__number
+          p.color-soft-white-original.font-family-bold.js-counter(data-purecounter-start='0' data-purecounter-end='1' data-purecounter-duration="4")
           span.color-soft-white-original.font-family-bold bilião
         .grid-with-numbers__text
           p.color-soft-white-original.font-family-regular Aproximadamente 1 bilião de pessoas em todo o mundo fumam cigarros e, de acordo com a Organização Mundial da Saúde, este número será praticamente o mesmo em 2025.
@@ -26,8 +26,11 @@ section.grid-with-numbers.background-soft-white-medium
       </svg>
     .grid-with-numbers__container.grid-with-numbers__container--inverted
       .grid-with-numbers__content.background-blue-original
-        .grid-with-numbers__number 
-          p.color-soft-white-original.font-family-bold 10,5
+        .grid-with-numbers__number
+          .grid-with-numbers__number-animation
+            p.color-soft-white-original.font-family-bold.js-counter(data-purecounter-start='0' data-purecounter-end='10')
+            p.color-soft-white-original.font-family-bold ,
+            p.color-soft-white-original.font-family-bold.js-counter-decimal(data-purecounter-start='0' data-purecounter-end='5')
           span.color-soft-white-original.font-family-bold biliões
         .grid-with-numbers__text
           p.color-soft-white-original.font-family-regular Investimos mais de 10,5 biliões de dólares em pesquisa, comprovação científica e comercialização dos nossos produtos sem fumo.
