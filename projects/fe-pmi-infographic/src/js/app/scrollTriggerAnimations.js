@@ -27,22 +27,18 @@ function gsapFadeAnimation(animationType, initialY, initialX) {
       ScrollTrigger.create({
         trigger: animation,
         animation: animationFade,
-        start: "top 90%",
-        end: "top center",
-        //markers: true,
-        toggleActions: "play none none none",
-        //once: true,
-        // onEnter: self => {
-        //   // If it's scrolled past, set the state
-        //   // If it's scrolled to, play it
-        //   self.progress === 1 ? animationFade.progress(1) : animationFade.play()
-        // }
+        toggleActions: "restart none none none", // change first to play if is only once
+        once: true,
       });
     }
   );
 }
 
-gsapFadeAnimation('fade-up', 100, 0);
-gsapFadeAnimation('fade-in', 0, 0);
-gsapFadeAnimation('fade-from-left', 0, -100);
-gsapFadeAnimation('fade-from-right', 0, 100);
+function initAnimations() {
+  gsapFadeAnimation('fade-up', 100, 0);
+  gsapFadeAnimation('fade-in', 0, 0);
+  gsapFadeAnimation('fade-from-left', 0, -100);
+  gsapFadeAnimation('fade-from-right', 0, 100);
+}
+
+initAnimations();
