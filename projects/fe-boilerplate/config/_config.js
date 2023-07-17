@@ -15,6 +15,7 @@ export const config = {
     },
     dist: {
       app: 'dist/assets/js/app/',
+      vendor: 'dist/assets/js/vendor/'
     },
     vendor: [
       //ADD VENDORS HERE - path from Node_modules path
