@@ -28,7 +28,7 @@ function gsapFadeAnimation(animationType, initialY, initialX) {
         trigger: animation,
         animation: animationFade,
         toggleActions: "restart none none none", // change first to play if is only once
-        once: true,
+        //once: true, // uncomment if is only once
       });
     }
   );
