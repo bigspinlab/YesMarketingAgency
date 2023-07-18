@@ -309,14 +309,15 @@ sup {
   color: var(--white);
 }
 
-html,
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   overscroll-behavior: none;
   overflow-x: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
