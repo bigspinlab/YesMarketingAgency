@@ -27,11 +27,15 @@ function gsapFadeAnimation(animationType, initialY, initialX) {
       ScrollTrigger.create({
         trigger: animation,
         animation: animationFade,
-        toggleActions: "restart none none none", // change first to play if is only once
+        toggleActions: "restart none none pause", // change first to play if is only once
         //once: true, // uncomment if is only once
       });
     }
   );
+
+  ScrollTrigger.config({
+    autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" // notice "resize" isn't in the list
+  });
 }
 
 function initAnimations() {
