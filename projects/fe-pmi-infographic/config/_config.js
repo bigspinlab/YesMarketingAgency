@@ -3,11 +3,6 @@ import path from 'path';
 const __dirname = path.resolve();
 
 export const config = {
-  data: {
-    src: 'src/data/*.json',
-    temp: 'src/data/temp/',
-    file: 'data.json'
-  },
   scripts: {
     app: {
       src: 'src/js/app/**/*.js',
@@ -22,16 +17,11 @@ export const config = {
       //path.join(__dirname, 'node_modules', 'countup.js', 'dist', 'countUp.min.js')
     ]
   },
-  json: {
-    src: 'src/json/*.json',
-    dest: 'dist/assets/json/'
-  },
   views: {
     pug: {
-      src: ['src/views/**/*.pug', '!src/views/templates/*.pug'],
-      templates: 'src/views/templates/*.pug',
-      watch: 'src/views/**/*',
-      dest: 'dist/views'
+      src: ['src/*.pug'],
+      watch: 'src/*',
+      dest: 'dist/'
     },
     index: {
       src: 'src/index.pug',
@@ -42,7 +32,6 @@ export const config = {
   styles: {
     app: {
       src: 'src/scss/global.scss',
-      srcSG: 'src/scss/styleguide.scss',
       watch: 'src/scss/**/*.scss'
     },
 

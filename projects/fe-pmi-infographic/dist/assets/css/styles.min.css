@@ -864,14 +864,14 @@ body {
   min-height: 40vh;
   display: flex;
   flex-direction: column;
-  background-image: url("/assets/img/content/mobile-road.png");
+  background-image: url("../img/content/mobile-road.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
 @media (min-width: 48em) {
   .jumbotron-with-image-background {
-    background-image: url("/assets/img/content/road.png");
+    background-image: url("../img/content/road.png");
   }
 }
 .jumbotron-with-image__content-wrapper {
@@ -940,7 +940,7 @@ body {
   width: 100%;
   height: 50vh;
   display: flex;
-  background-image: url("/assets/img/content/mobile-the-pmi.png");
+  background-image: url("../img/content/mobile-the-pmi.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -948,7 +948,7 @@ body {
 @media (min-width: 48em) {
   .masthead-article-image {
     height: 60vh;
-    background-image: url("/assets/img/content/the-pmi.png");
+    background-image: url("../img/content/the-pmi.png");
   }
 }
 .masthead-article-content {
@@ -1077,7 +1077,7 @@ body {
 }
 @media (min-width: 64em) {
   .sticky-animated__content {
-    padding: 26.8rem 10rem;
+    padding: 0 10rem;
   }
 }
 .sticky-animated__content-text {

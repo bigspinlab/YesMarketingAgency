@@ -5,14 +5,14 @@
     width: 100%;
     height: 50vh;
     display: flex;
-    background-image: url('/assets/img/content/mobile-the-pmi.png');
+    background-image: url('../img/content/mobile-the-pmi.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
 
     @include bp('medium') {
       height: 60vh;
-      background-image: url('/assets/img/content/the-pmi.png');
+      background-image: url('../img/content/the-pmi.png');
     }
   }
 

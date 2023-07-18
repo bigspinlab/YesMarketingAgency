@@ -12,13 +12,13 @@
     min-height: 40vh;
     display: flex;
     flex-direction: column;
-    background-image: url('/assets/img/content/mobile-road.png');
+    background-image: url('../img/content/mobile-road.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
 
     @include bp('medium') {
-      background-image: url('/assets/img/content/road.png');
+      background-image: url('../img/content/road.png');
     }
   }
 

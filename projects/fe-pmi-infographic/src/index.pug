@@ -1,27 +1,31 @@
-extends /views/styleguide/layout
+extends views/skeleton/layout
 
-block styleguide
+block vars
 
-  -
-    const templateName = 'Templates'
-      templateBlockName = 'Modules'
-      colorHeading = 'black'
+  - const title = 'Philip Morris International'
 
-  .styleguide__accordion
-    button.styleguide__button.js-accordion
-      h1(class=`text text--${colorHeading}`)=templateName
-    table.styleguide__table
-      thead
-        tr
-          th #
-          th Status
-          th Name
-          th Observations
-      tbody
-        each item in styleguide.templates
-          tr
-            td.text.text--center
-              span(class=`status status--${item.status}`)
-            td
-              a(href=`/views/templates/${item.href}.html`)=item.name
-            td=item.observations
+block blocks
+  include views/components/Masthead/masthead
+  
+  -isJumbotronWithSmallHeadline = true
+  include views/components/JumbotronText/jumbotron-text
+
+  include views/components/GridWithNumbers/grid-with-numbers
+
+  include views/components/GridWithImages/grid-with-images
+
+  -isJumbotronWithSmallHeadline = false
+  -isJumbotronWithIcon = true
+  include views/components/JumbotronText/jumbotron-text
+  
+  include views/components/GridWithArrows/grid-with-arrows
+
+  include views/components/ColumnNumbers/column-numbers
+
+  -isJumbotronWithIcon = false 
+  -isJumbotronWithBlueBackground = true
+  include views/components/JumbotronText/jumbotron-text
+
+  include views/components/StickyAnimated/sticky-animated
+
+  include views/components/JumbotronWithImage/jumbotron-with-image

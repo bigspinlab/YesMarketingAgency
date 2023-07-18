@@ -1,7 +1,6 @@
 import gulp from 'gulp';
 import { config } from './_config.js';
 import browserSync from 'browser-sync';
-import data from './data.js';
 import html from './html.js';
 import images from './images.js';
 import scripts from './scripts.js';
@@ -40,7 +39,6 @@ const watchAssets = done => {
   watch(config.scripts.app.watch, series(scripts, reload));
   watch(config.views.pug.watch, series(html, reload));
   watch(config.images.watch, series(images, reload));
-  watch(config.data.src, series(data, html, reload));
   done();
 };
 

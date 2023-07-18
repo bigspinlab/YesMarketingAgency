@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-pt">
   <head>
-    <title>PageTitle :: Styleguide :: Templates &amp; Blocks</title>
+    <title>PageTitle :: Philip Morris International</title>
     <meta charset="utf-8">
     <meta name="description" content="Yes Marketing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,49 +10,285 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/favicon/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-16x16.png" sizes="16x16">
-    <meta name="application-name" content="PageTitle :: Styleguide :: Templates &amp; Blocks">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
+    <meta name="application-name" content="PageTitle :: Philip Morris International">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
-    <link rel="stylesheet" href="/assets/css/styleguide.min.css">
+    <!-- link(rel='stylesheet' href='assets/css/vendor/vendor.min.css')-->
+    <link rel="stylesheet" href="assets/css/styles.min.css">
   </head>
-  <body class="styleguide">
-    <div class="styleguide__wrapper">
-      <header class="styleguide__header"><a href="/">PageTitle :: Styleguide :: Templates &amp; Blocks</a></header>
-      <div class="styleguide__accordion">
-        <button class="styleguide__button js-accordion">
-          <h1 class="text text--black">Templates</h1>
-        </button>
-        <table class="styleguide__table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Status</th>
-              <th>Name</th>
-              <th>Observations</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="text text--center"><span class="status status--not-started"></span></td>
-              <td><a href="/views/templates/home.html">Homepage</a></td>
-              <td>N/A</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <footer class="styleguide__footer">
-      <div class="styleguide__footer-text">Vitor Martins</div>
-      <div class="styleguide__footer-number">Copyright &copy;  2023</div>
-    </footer>
-    <script>document.querySelectorAll('.js-accordion').forEach(el => el.addEventListener('click', () => el.nextElementSibling.classList.toggle('hidden')))</script>
+  <body>
+    <header class="sr-only"></header>
+    <main class="wrapper" id="content">
+      <section class="masthead"> 
+        <article class="masthead-article-image">
+          <div class="masthead-logo-image" data-gsap="fade-up"><img class="masthead-logo-image__item" src="assets/img/brand/logo.svg" alt="pmi-logo"></div>
+        </article>
+        <article class="masthead-article-content background-blue-original">
+          <div class="masthead-article-content__wrapper" data-gsap="fade-up" data-gsap-delay="500">
+            <h1 class="masthead-article-content__headline headline font-family-bold color-soft-white-original">
+               A PMI é <span>muito mais</span> do que uma empresa de tabaco.</h1>
+            <p class="masthead-article-content__text text font-family-regular color-soft-white-original">Queremos oferecer alternativas menos nocivas aos fumadores adultos, que pretendem continuar a fumar.</p>
+          </div>
+        </article>
+      </section>
+      <section class="jumbotron-text background-soft-white-original">
+        <article class="jumbotron-article jumbotron-article--large"><span class="jumbotron-span-small font-family-bold color-slate-original" data-gsap="fade-in">Aposta na transformação</span>
+          <p class="text font-family-regular color-slate-original text-align-center" data-gsap="fade-in" data-gsap-delay="500">Hoje em dia, a Philip Morris International é muito mais do que um empresa de cigarros. Na verdade, estamos a transformar a nossa empresa e a apostar o nosso futuro na substituição de cigarros por alternativas sem fumo.</p>
+        </article>
+      </section>
+      <section class="grid-with-numbers background-soft-white-medium">
+        <article class="grid-with-numbers__article">
+          <h2 class="grid-with-numbers__headline headline font-family-bold color-slate-original" data-gsap="fade-in" data-gsap-delay="500">E porque o estamos a fazer? Porque é a atitude <span>certa.</span></h2>
+          <div class="grid-with-numbers__container" data-gsap="fade-from-left" data-gsap-delay="500"> 
+            <div class="grid-with-numbers__content background-blue-original">
+              <div class="grid-with-numbers__number">
+                <p class="color-soft-white-original font-family-bold js-counter" data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="4"></p><span class="color-soft-white-original font-family-bold">bilião</span>
+              </div>
+              <div class="grid-with-numbers__text">
+                <p class="color-soft-white-original font-family-regular">Aproximadamente 1 bilião de pessoas em todo o mundo fumam cigarros e, de acordo com a Organização Mundial da Saúde, este número será praticamente o mesmo em 2025.</p>
+              </div>
+            </div>
+            <picture class="grid-with-numbers__picture">
+              <source srcset="assets/img/content/people-on-the-streets.png" media="(min-width: 1024px)">
+              <source srcset="assets/img/content/mobile-people-on-the-streets.png" media="(min-width: 576px)"><img class="grid-with-numbers__picture-img" src="assets/img/content/mobile-people-on-the-streets.png" alt="">
+            </picture>
+          </div>
+          <div class="grid-with-numbers__arrow-down" data-gsap="fade-in" data-gsap-delay="300"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="81" viewBox="0 0 16 81" fill="none">
+<path d="M7.29289 80.7071C7.68341 81.0976 8.31658 81.0976 8.7071 80.7071L15.0711 74.3431C15.4616 73.9526 15.4616 73.3195 15.0711 72.9289C14.6805 72.5384 14.0474 72.5384 13.6569 72.9289L8 78.5858L2.34314 72.9289C1.95262 72.5384 1.31945 72.5384 0.928929 72.9289C0.538405 73.3195 0.538405 73.9526 0.928929 74.3431L7.29289 80.7071ZM7 -4.37114e-08L7 80L9 80L9 4.37114e-08L7 -4.37114e-08Z" fill="#287BAF"/>
+</svg>
+          </div>
+          <div class="grid-with-numbers__paragraph" data-gsap="fade-in" data-gsap-delay="600"> 
+            <p class="text font-family-regular color-slate-original text-align-center">Queremos oferecer aos fumadores adultos, que pretendem continuar a fumar, alternativas menos nocivas para que o possam fazer.</p>
+          </div>
+          <div class="grid-with-numbers__arrow-down" data-gsap="fade-in" data-gsap-delay="900"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="81" viewBox="0 0 16 81" fill="none">
+<path d="M7.29289 80.7071C7.68341 81.0976 8.31658 81.0976 8.7071 80.7071L15.0711 74.3431C15.4616 73.9526 15.4616 73.3195 15.0711 72.9289C14.6805 72.5384 14.0474 72.5384 13.6569 72.9289L8 78.5858L2.34314 72.9289C1.95262 72.5384 1.31945 72.5384 0.928929 72.9289C0.538405 73.3195 0.538405 73.9526 0.928929 74.3431L7.29289 80.7071ZM7 -4.37114e-08L7 80L9 80L9 4.37114e-08L7 -4.37114e-08Z" fill="#287BAF"/>
+</svg>
+          </div>
+          <div class="grid-with-numbers__container grid-with-numbers__container--inverted" data-gsap="fade-from-right" data-gsap-delay="900"> 
+            <div class="grid-with-numbers__content background-blue-original">
+              <div class="grid-with-numbers__number">
+                <div class="grid-with-numbers__number-animation">
+                  <p class="color-soft-white-original font-family-bold js-counter" data-purecounter-start="0" data-purecounter-end="10"></p>
+                  <p class="color-soft-white-original font-family-bold">,</p>
+                  <p class="color-soft-white-original font-family-bold js-counter-decimal" data-purecounter-start="0" data-purecounter-end="5"></p>
+                </div><span class="color-soft-white-original font-family-bold">biliões</span>
+              </div>
+              <div class="grid-with-numbers__text">
+                <p class="color-soft-white-original font-family-regular">Investimos mais de 10,5 biliões de dólares em pesquisa, comprovação científica e comercialização dos nossos produtos sem fumo.</p>
+              </div>
+            </div>
+            <picture class="grid-with-numbers__picture"> 
+              <source srcset="assets/img/content/lab.png" media="(min-width: 1024px)">
+              <source srcset="assets/img/content/mobile-lab.png" media="(min-width: 576px)"><img class="grid-with-numbers__picture-img" src="assets/img/content/mobile-lab.png" alt="">
+            </picture>
+          </div>
+        </article>
+      </section>
+      <section class="grid-with-images background-blue-original">
+        <article class="grid-with-images__article">
+          <h2 class="grid-with-images__headline headline font-family-bold color-soft-white-original" data-gsap="fade-in" data-gsap-delay="300">Fornecer Alternativas: Agir agora para um futuro <span>sem fumo.</span></h2>
+          <div class="grid-with-images__container" data-gsap="fade-from-right" data-gsap-delay="500"> 
+            <div class="grid-with-images__content"> 
+              <div class="grid-with-images__icon">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+<path d="M44.5412 5.24767C40.2758 2.74013 35.2995 1.29248 30 1.29248C14.1405 1.29248 1.29254 14.1404 1.29254 29.9999C1.29254 45.8595 14.1405 58.7074 30 58.7074C45.8596 58.7074 58.7075 45.8595 58.7075 29.9999" stroke="#34303D" stroke-width="2.58509" stroke-linecap="round"/>
+<path d="M42.0337 9.86271C38.5438 7.80756 34.4723 6.63135 30.1293 6.63135C17.1521 6.63135 6.63078 17.1527 6.63078 30.1298C6.63078 43.107 17.1521 53.6283 30.1293 53.6283C43.1065 53.6283 53.6278 43.107 53.6278 30.1298" stroke="white" stroke-width="2.58509" stroke-linecap="round"/>
+<path d="M16.0276 27.6347L27.6347 39.7847L57.066 9.53906" stroke="#34303D" stroke-width="2.58509" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+              </div>
+              <div class="grid-with-images__text">
+                <p class="text font-family-regular color-soft-white-original">Todos estes fumadores adultos, não são apenas números. Podem ser familiares, amigos ou apenas conhecidos. Medidas para dissuadir a iniciação e encorajar a cessação são fundamentais. </p>
+              </div>
+            </div>
+            <picture class="grid-with-images__picture">
+              <source srcset="assets/img/content/girl-with-a-bag.png" media="(min-width: 1024px)">
+              <source srcset="assets/img/content/mobile-girl-with-a-bag.png" media="(min-width: 576px)"><img class="grid-with-images__picture-img" src="assets/img/content/mobile-girl-with-a-bag.png" alt="">
+            </picture>
+          </div>
+          <div class="grid-with-images__container grid-with-images__container--inverted" data-gsap="fade-from-left" data-gsap-delay="500"> 
+            <div class="grid-with-images__content"> 
+              <div class="grid-with-images__icon">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+<path d="M44.5412 5.24767C40.2758 2.74013 35.2995 1.29248 30 1.29248C14.1405 1.29248 1.29254 14.1404 1.29254 29.9999C1.29254 45.8595 14.1405 58.7074 30 58.7074C45.8596 58.7074 58.7075 45.8595 58.7075 29.9999" stroke="#34303D" stroke-width="2.58509" stroke-linecap="round"/>
+<path d="M42.0337 9.86271C38.5438 7.80756 34.4723 6.63135 30.1293 6.63135C17.1521 6.63135 6.63078 17.1527 6.63078 30.1298C6.63078 43.107 17.1521 53.6283 30.1293 53.6283C43.1065 53.6283 53.6278 43.107 53.6278 30.1298" stroke="white" stroke-width="2.58509" stroke-linecap="round"/>
+<path d="M16.0276 27.6347L27.6347 39.7847L57.066 9.53906" stroke="#34303D" stroke-width="2.58509" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+              </div>
+              <div class="grid-with-images__text">
+                <p class="text font-family-regular color-soft-white-original">A melhor opção será sempre abandonar totalmente o consumo de tabaco e nicotina ou, melhor ainda, não começar a fumar.</p>
+              </div>
+            </div>
+            <picture class="grid-with-images__picture"> 
+              <source srcset="assets/img/content/people-and-tree.png" media="(min-width: 1024px)">
+              <source srcset="assets/img/content/mobile-people-and-tree.png" media="(min-width: 576px)"><img class="grid-with-images__picture-img" src="assets/img/content/mobile-people-and-tree.png" alt="">
+            </picture>
+          </div>
+          <div class="grid-with-images__container" data-gsap="fade-from-right" data-gsap-delay="500"> 
+            <div class="grid-with-images__content"> 
+              <div class="grid-with-images__icon">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+<path d="M44.5412 5.24767C40.2758 2.74013 35.2995 1.29248 30 1.29248C14.1405 1.29248 1.29254 14.1404 1.29254 29.9999C1.29254 45.8595 14.1405 58.7074 30 58.7074C45.8596 58.7074 58.7075 45.8595 58.7075 29.9999" stroke="#34303D" stroke-width="2.58509" stroke-linecap="round"/>
+<path d="M42.0337 9.86271C38.5438 7.80756 34.4723 6.63135 30.1293 6.63135C17.1521 6.63135 6.63078 17.1527 6.63078 30.1298C6.63078 43.107 17.1521 53.6283 30.1293 53.6283C43.1065 53.6283 53.6278 43.107 53.6278 30.1298" stroke="white" stroke-width="2.58509" stroke-linecap="round"/>
+<path d="M16.0276 27.6347L27.6347 39.7847L57.066 9.53906" stroke="#34303D" stroke-width="2.58509" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+              </div>
+              <div class="grid-with-images__text">
+                <p class="text font-family-regular color-soft-white-original">Mas, para a grande maioria dos fumadores adultos, que pretendem continuar a fumar, deve existir um plano de sensibilização e de informação, baseado em evidência científica convincente.</p>
+              </div>
+            </div>
+            <picture class="grid-with-images__picture">
+              <source srcset="assets/img/content/road-and-mountain.png" media="(min-width: 1024px)">
+              <source srcset="assets/img/content/mobile-road-and-mountain.png" media="(min-width: 576px)"><img class="grid-with-images__picture-img" src="assets/img/content/mobile-road-and-mountain.png" alt="">
+            </picture>
+          </div>
+        </article>
+      </section>
+      <section class="jumbotron-text background-soft-white-medium">
+        <article class="jumbotron-article jumbotron-article--small">
+          <div class="jumbotron-article__icon" data-gsap="fade-in"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+<path d="M74.2354 8.74628C67.1263 4.56705 58.8325 2.1543 50.0001 2.1543C23.5675 2.1543 2.15425 23.5675 2.15425 50.0001C2.15425 76.4326 23.5675 97.8458 50.0001 97.8458C76.4327 97.8458 97.8459 76.4326 97.8459 50.0001" stroke="#287BAF" stroke-width="4.30849" stroke-linecap="round"/>
+<path d="M70.0561 16.4374C64.2397 13.0121 57.4538 11.0518 50.2155 11.0518C28.5869 11.0518 11.0513 28.5873 11.0513 50.2159C11.0513 71.8445 28.5869 89.3801 50.2155 89.3801C71.8442 89.3801 89.3797 71.8445 89.3797 50.2159" stroke="white" stroke-width="4.30849" stroke-linecap="round"/>
+<path d="M26.7127 46.0579L46.0578 66.3077L95.11 15.8984" stroke="#287BAF" stroke-width="4.30849" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </div>
+          <p class="text font-family-bold color-slate-original text-align-center" data-gsap="fade-in" data-gsap-delay="500">Existem, atualmente, produtos cientificamente comprovados menos nocivos do que os cigarros, e que se encontram disponíveis para fumadores adultos que, de outra forma, continuariam a fumar.</p>
+        </article>
+      </section>
+      <section class="grid-with-arrows"> 
+        <article class="grid-with-arrows__article">
+          <div class="grid-with-arrows__headline-wrapper" data-gsap="fade-in" data-gsap-delay="300">
+            <h2 class="headline font-family-bold color-slate-original">A transformação não pode acontecer sem <span>diálogo.</span></h2>
+            <p class="text font-family-regular color-slate-original">Embora o compromisso da PMI, com um futuro sem fumo seja inabalável e tenhamos evidências científicas robustas do nosso lado, não podemos fazer esta jornada sozinhos.</p>
+          </div>
+          <div class="grid-with-arrows__container">
+            <div class="grid-with-arrows__svg" data-gsap="fade-from-left" data-gsap-delay="500">
+               <svg class="first-arrow" xmlns="http://www.w3.org/2000/svg" width="176" height="71" viewBox="0 0 176 71" fill="none">
+<path d="M2 56H0V58H2V56ZM174.914 57.4142C175.695 56.6332 175.695 55.3668 174.914 54.5858L162.186 41.8579C161.405 41.0768 160.139 41.0768 159.358 41.8579C158.577 42.6389 158.577 43.9052 159.358 44.6863L170.672 56L159.358 67.3137C158.577 68.0948 158.577 69.3611 159.358 70.1421C160.139 70.9232 161.405 70.9232 162.186 70.1421L174.914 57.4142ZM0 0V56H4V0H0ZM2 58H173.5V54H2V58Z" fill="#34303D"/>
+</svg>
+            </div>
+            <div class="grid-with-arrows__content background-amber-original" data-gsap="fade-from-right" data-gsap-delay="500"> 
+              <div class="grid-with-arrows__text">
+                <p class="text font-family-regular color-slate-original">Por muito tempo, o debate sobre o tabagismo foi polarizado. </p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-with-arrows__container grid-with-arrows__container--inverted">
+            <div class="grid-with-arrows__svg" data-gsap="fade-from-right" data-gsap-delay="700">
+               <svg class="second-arrow" xmlns="http://www.w3.org/2000/svg" width="182" height="209" viewBox="0 0 182 209" fill="none">
+<path d="M124.5 94.5L124.5 92.5L122.5 92.5L122.5 94.5L124.5 94.5ZM124.5 194L124.5 196L126.5 196L126.5 194L124.5 194ZM0.586365 192.586C-0.194687 193.367 -0.194687 194.633 0.586365 195.414L13.3143 208.142C14.0954 208.923 15.3617 208.923 16.1427 208.142C16.9238 207.361 16.9238 206.095 16.1427 205.314L4.82901 194L16.1427 182.686C16.9238 181.905 16.9237 180.639 16.1427 179.858C15.3616 179.077 14.0953 179.077 13.3143 179.858L0.586365 192.586ZM180 94.4999L180 96.4999L182 96.4999L182 94.4999L180 94.4999ZM122.5 94.5L122.5 194L126.5 194L126.5 94.5L122.5 94.5ZM124.5 192L2.00058 192L2.00058 196L124.5 196L124.5 192ZM124.5 96.5L180 96.4999L180 92.4999L124.5 92.5L124.5 96.5ZM182 94.4999L182 0.49997L178 0.499969L178 94.4999L182 94.4999Z" fill="#34303D"/>
+</svg>
+            </div>
+            <div class="grid-with-arrows__content background-amber-original" data-gsap="fade-from-left" data-gsap-delay="700"> 
+              <div class="grid-with-arrows__text">
+                <p class="text font-family-regular color-slate-original">Sem a disposição dos líderes mundiais, governos, reguladores e ONG’s, de olhar imparcialmente para as evidências científicas a favor de alternativas sem fumo, comparativamente com os cigarros combustíveis, a mudança não acontecerá rapidamente.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-with-arrows__container"> 
+            <div class="grid-with-arrows__svg" data-gsap="fade-from-left" data-gsap-delay="900">
+               <svg class="third-arrow" xmlns="http://www.w3.org/2000/svg" width="300" height="174" viewBox="0 0 300 174" fill="none">
+<path d="M72.6887 101.213L74.117 99.8132L72.702 98.3694L71.2735 99.7999L72.6887 101.213ZM102.189 131.311L100.76 132.711L102.165 134.145L103.594 132.735L102.189 131.311ZM181.226 53.2787L182.642 51.8655L181.236 50.4583L179.821 51.8555L181.226 53.2787ZM213.509 85.6066L212.094 87.0198L213.509 88.437L214.925 87.0198L213.509 85.6066ZM299 1.99861C298.999 0.894042 298.103 -0.000766277 296.999 4.76837e-07L278.999 0.0124949C277.894 0.0132616 276.999 0.909313 277 2.01388C277.001 3.11845 277.897 4.01326 279.001 4.01249L295.001 4.00139L295.013 20.0014C295.013 21.106 295.909 22.0008 297.014 22C298.118 21.9992 299.013 21.1032 299.013 19.9986L299 1.99861ZM3.41519 173.413L74.1039 102.626L71.2735 99.7999L0.584805 170.587L3.41519 173.413ZM71.2603 102.613L100.76 132.711L103.617 129.912L74.117 99.8132L71.2603 102.613ZM103.594 132.735L182.632 54.7019L179.821 51.8555L100.784 129.888L103.594 132.735ZM179.811 54.6919L212.094 87.0198L214.925 84.1933L182.642 51.8655L179.811 54.6919ZM214.925 87.0198L298.415 3.41323L295.585 0.586768L212.094 84.1933L214.925 87.0198Z" fill="#34303D"/>
+</svg>
+            </div>
+            <div class="grid-with-arrows__content background-amber-original" data-gsap="fade-from-right" data-gsap-delay="900"> 
+              <div class="grid-with-arrows__text">
+                <p class="text font-family-regular color-slate-original">Nos Estados Unidos, Reino Unido, Nova Zelândia e Suécia, há um crescente reconhecimento de que as alternativas sem fumo podem complementar as políticas de saúde existentes, focadas na prevenção e cessação do tabagismo.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="column-numbers"> 
+        <article class="column-numbers__wrapper"> 
+          <div class="column-numbers__col background-blue-original"> 
+            <div class="column-numbers__number"> 
+              <p class="color-soft-white-original font-family-bold js-counter" data-purecounter-start="0" data-purecounter-end="18"></p>
+            </div>
+            <div class="column-numbers__text">
+              <p class="color-soft-white-original font-family-regular">Estudos não clínicos</p>
+            </div>
+          </div>
+          <div class="column-numbers__col background-blue-dark"> 
+            <div class="column-numbers__number">
+              <p class="color-soft-white-original font-family-bold js-counter" data-purecounter-start="0" data-purecounter-end="10"></p>
+            </div>
+            <div class="column-numbers__text">
+              <p class="color-soft-white-original font-family-regular">Estudos clínicos</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="jumbotron-text background-blue-light">
+        <article class="jumbotron-article jumbotron-article--medium" data-gsap="fade-up" data-gsap-delay="500"> 
+          <p class="text font-family-regular color-soft-white-original text-align-center" data-gsap="fade-in">As nossas alternativas não combustíveis foram submetidas a sólidas avaliações científicas, incluindo, até à data, 18 estudos não clínicos e 10 estudos clínicos com milhares de participantes.</p>
+        </article>
+      </section>
+      <section class="sticky-animated background-soft-white-original">
+        <article class="sticky-animated__article">
+          <div class="sticky-animated__wrapper background-turquoise-original">
+            <picture class="sticky-animated__picture">
+              <source srcset="assets/img/content/drone-angle.png" media="(min-width: 768px)">
+              <source srcset="assets/img/content/mobile-drone-angle.png" media="(min-width: 576px)"><img class="sticky-animated__picture-img" src="assets/img/content/mobile-drone-angle.png" alt="">
+            </picture>
+            <div class="sticky-animated__content background-turquoise-original">
+              <p class="color-slate-original sticky-animated__content-text font-family-bold">Apesar da utilização das mesmas não ser livre de risco</p>
+            </div>
+          </div>
+        </article>
+        <article class="sticky-animated__article">
+          <div class="sticky-animated__wrapper background-turquoise-original">
+            <picture class="sticky-animated__picture">
+              <source srcset="assets/img/content/drone-angle.png" media="(min-width: 768px)">
+              <source srcset="assets/img/content/mobile-drone-angle.png" media="(min-width: 576px)"><img class="sticky-animated__picture-img" src="assets/img/content/mobile-drone-angle.png" alt="">
+            </picture>
+            <div class="sticky-animated__content">
+              <p class="sticky-animated__content-text color-slate-original font-family-bold">Mudar completamente para estas alternativas </p>
+            </div>
+          </div>
+        </article>
+        <article class="sticky-animated__article">
+          <div class="sticky-animated__wrapper background-turquoise-original">
+            <picture class="sticky-animated__picture"> 
+              <source srcset="assets/img/content/drone-angle.png" media="(min-width: 768px)">
+              <source srcset="assets/img/content/mobile-drone-angle.png" media="(min-width: 576px)"><img class="sticky-animated__picture-img" src="assets/img/content/mobile-drone-angle.png" alt="">
+            </picture>
+            <div class="sticky-animated__content background-turquoise-original">
+              <p class="sticky-animated__content-text color-slate-original font-family-bold">É uma melhor opção do que continuar a fumar cigarros.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="jumbotron-with-image"> 
+        <article class="jumbotron-with-image-article">
+          <div class="jumbotron-with-image__content background-blue-original">
+            <div class="jumbotron-with-image__content-wrapper">
+              <p class="text font-family-regular color-soft-white-original text-align-center" data-gsap="fade-up" data-gsap-delay="500"> Para que tal aconteça, o diálogo e o acesso à informação deve ser feito de forma clara para que em conjunto, possamos adotar</p>
+              <div class="jumbotron-with-image__svg" data-gsap="fade-up" data-gsap-delay="700">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="4" height="80" viewBox="0 0 4 80" fill="none">
+<path d="M2 0L2 80" stroke="#FFFDFB" stroke-width="4"/>
+</svg>
+              </div>
+            </div>
+            <div class="jumbotron-with-image-background">
+              <h2 class="jumbotron-with-image__headline headline font-family-bold color-soft-white-original text-align-center" data-gsap="fade-up" data-gsap-delay="900"> Um futuro livre de fumo.</h2>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="sr-only"></footer>
+    <!--script(src='assets/js/vendor/vendor.min.js' defer)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js" defer></script>
+    <script src="assets/js/app/app.min.js" defer></script>
   </body>
 </html>
