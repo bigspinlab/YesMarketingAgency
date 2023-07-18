@@ -315,10 +315,13 @@ body {
   width: 100vw;
   overscroll-behavior: none;
   overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .wrapper {
   flex: 1 0 auto;
+  height: 100%;
 }
 
 .column-numbers {

@@ -74,8 +74,11 @@ body {
   width: 100vw;
   overscroll-behavior: none;
   overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .wrapper {
   flex: 1 0 auto; //FIX WEBKIT based browsers bug from letting these items shrink to smaller than their content's default minimum size.
+  height: 100%;
 }
