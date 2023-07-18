@@ -1,15 +1,19 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.config({
+  nullTargetWarn: false,
+});
 
 function gsapFadeAnimation(animationType, initialY, initialX) {
   const animatedContainers = gsap.utils.toArray(`[data-gsap="${animationType}"]`)
 
   animatedContainers.forEach(
     (animatedItem) => {
-      let delayedAnimation = 0;
-      if (animatedItem.hasAttribute("data-gsap-delay")) {
-        delayedAnimation =
-          Number(animatedItem.getAttribute("data-gsap-delay")) / 1000;
+
+      if (!animatedItem) {
+        return;
       }
+
+      const delayedAnimation = Number(animatedItem.getAttribute("data-gsap-delay")) / 1000 ?? 0;
 
       gsap.set(animatedItem, {
         autoAlpha: 0,
@@ -26,14 +30,13 @@ function gsapFadeAnimation(animationType, initialY, initialX) {
           delay: delayedAnimation,
           scrollTrigger: {
             trigger: animatedItem,
-            start: "top 71%",
-            scrub: true,
             toggleActions: "play none none none", // change first to play if is only once
           }
         }
       )
     }
   );
+
 }
 
 function initAnimations() {
@@ -50,4 +53,4 @@ function callAfterResize(func, delay) {
   return handler; // in case you want to window.removeEventListener() later
 }
 
-callAfterResize(initAnimations());
+callAfterResize(initAnimations(), 0.3);
