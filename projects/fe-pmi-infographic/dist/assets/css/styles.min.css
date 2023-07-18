@@ -322,7 +322,7 @@ body {
 
 .wrapper {
   flex: 1 0 auto;
-  height: 100%;
+  overflow-x: hidden;
 }
 
 .column-numbers {

@@ -81,5 +81,5 @@ body {
 
 .wrapper {
   flex: 1 0 auto; //FIX WEBKIT based browsers bug from letting these items shrink to smaller than their content's default minimum size.
-  height: 100%;
+  overflow-x: hidden;
 }

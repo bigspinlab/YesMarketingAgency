@@ -4,38 +4,35 @@ function gsapFadeAnimation(animationType, initialY, initialX) {
   const animatedContainers = gsap.utils.toArray(`[data-gsap="${animationType}"]`)
 
   animatedContainers.forEach(
-    (animation) => {
+    (animatedItem) => {
       let delayedAnimation = 0;
-      if (animation.hasAttribute("data-gsap-delay")) {
+      if (animatedItem.hasAttribute("data-gsap-delay")) {
         delayedAnimation =
-          Number(animation.getAttribute("data-gsap-delay")) / 1000;
+          Number(animatedItem.getAttribute("data-gsap-delay")) / 1000;
       }
 
-      const animationFade = gsap.fromTo(
-        animation, {
-          autoAlpha: 0,
-          y: initialY,
-          x: initialX
-        }, {
-          duration: 1,
+      gsap.set(animatedItem, {
+        autoAlpha: 0,
+        y: initialY,
+        x: initialX
+      })
+
+      gsap.to(
+        animatedItem, {
+          duration: 2,
           autoAlpha: 1,
           y: 0,
           x: 0,
-          delay: delayedAnimation
+          delay: delayedAnimation,
+          scrollTrigger: {
+            trigger: animatedItem,
+            start: "top 71%",
+            toggleActions: "play none none none", // change first to play if is only once
+          }
         }
-      );
-      ScrollTrigger.create({
-        trigger: animation,
-        animation: animationFade,
-        toggleActions: "play none none pause", // change first to play if is only once
-        //once: true, // uncomment if is only once
-      });
+      )
     }
   );
-
-  ScrollTrigger.config({
-    autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" // notice "resize" isn't in the list
-  });
 }
 
 function initAnimations() {
