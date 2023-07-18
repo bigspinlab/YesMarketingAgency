@@ -19,7 +19,7 @@ function gsapFadeAnimation(animationType, initialY, initialX) {
 
       gsap.to(
         animatedItem, {
-          duration: 2,
+          duration: 1.5,
           autoAlpha: 1,
           y: 0,
           x: 0,
@@ -27,6 +27,7 @@ function gsapFadeAnimation(animationType, initialY, initialX) {
           scrollTrigger: {
             trigger: animatedItem,
             start: "top 71%",
+            scrub: true,
             toggleActions: "play none none none", // change first to play if is only once
           }
         }
