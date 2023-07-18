@@ -27,7 +27,7 @@ function gsapFadeAnimation(animationType, initialY, initialX) {
       ScrollTrigger.create({
         trigger: animation,
         animation: animationFade,
-        toggleActions: "restart none none pause", // change first to play if is only once
+        toggleActions: "play none none pause", // change first to play if is only once
         //once: true, // uncomment if is only once
       });
     }

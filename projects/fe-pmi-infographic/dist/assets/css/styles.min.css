@@ -1038,7 +1038,7 @@ body {
 @media (min-width: 48em) {
   .sticky-animated__article {
     flex-direction: row;
-    padding: 26.5rem 10%;
+    padding: 5% 10%;
   }
 }
 .sticky-animated__wrapper {
