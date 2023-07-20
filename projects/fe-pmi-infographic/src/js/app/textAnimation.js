@@ -9,7 +9,6 @@ const textAnimations = () => {
       trigger: pinnedSection,
       pin: true,
       scrub: 1,
-      markers: true,
       end: () => "+=" + pinnedSection.offsetHeight * (textContainers.length - 1),
     },
   })
