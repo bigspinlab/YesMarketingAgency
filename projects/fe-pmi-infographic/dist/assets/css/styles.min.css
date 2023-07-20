@@ -387,12 +387,12 @@ body {
 .grid-with-arrows__headline-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 10% 4%;
+  padding: 20% 4%;
   max-width: 48rem;
 }
 @media (min-width: 48em) {
   .grid-with-arrows__headline-wrapper {
-    padding: 20rem 0 20rem 10%;
+    padding: 26rem 0 20rem 10%;
     max-width: 80rem;
   }
 }
@@ -1039,12 +1039,18 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  padding: 10% 4%;
+  padding: 20% 4%;
 }
 @media (min-width: 48em) {
   .sticky-animated__container {
     flex-direction: row;
-    padding: 5% 10%;
+    padding: 20% 10%;
+  }
+}
+@media (min-width: 64em) {
+  .sticky-animated__container {
+    flex-direction: row;
+    padding: 15rem 10%;
   }
 }
 .sticky-animated__wrapper {

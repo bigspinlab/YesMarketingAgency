@@ -8,11 +8,16 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    padding: 10% 4%;
+    padding: 20% 4%;
 
     @include bp('medium') {
       flex-direction: row;
-      padding: 5% 10%;
+      padding: 20% 10%;
+    }
+
+    @include bp('large') {
+      flex-direction: row;
+      padding: 15rem 10%;
     }
   }
 

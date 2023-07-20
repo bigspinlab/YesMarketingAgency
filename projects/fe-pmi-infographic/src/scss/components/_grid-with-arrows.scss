@@ -11,11 +11,11 @@
   &__headline-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 10% 4%;
+    padding: 20% 4%;
     max-width: 48rem;
 
     @include bp('medium') {
-      padding: 20rem 0 20rem 10%;
+      padding: 26rem 0 20rem 10%;
       max-width: 80rem;
     }
 
