@@ -8,12 +8,15 @@ const textAnimations = () => {
     scrollTrigger: {
       trigger: pinnedSection,
       pin: true,
-      scrub: true,
+      scrub: 1,
+      markers: true,
+      end: () => "+=" + pinnedSection.offsetHeight * (textContainers.length - 1),
     },
   })
 
   textContainers.forEach((text) => {
     animationTimeline.fromTo(text, {
+      lazy: false,
       opacity: 0,
     }, {
       opacity: 1,
