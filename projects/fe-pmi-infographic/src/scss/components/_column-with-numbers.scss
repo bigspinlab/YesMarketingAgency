@@ -28,10 +28,12 @@
   &__number  {
     font-size: 12rem;
     line-height: 12rem;
+    min-height: 12rem;
 
     @include bp('medium') {
       font-size: 20rem;
       line-height: 20rem;
+      min-height: 20rem;
     }
   }
 

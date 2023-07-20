@@ -101,10 +101,12 @@
     display: flex;
     width: 90%;
     margin-left: auto;
+    min-height: 27rem;
 
     @include bp('large') {
       width: 40%;
       min-width: 45%;
+      height: 100vh;
     }
 
     &-img {

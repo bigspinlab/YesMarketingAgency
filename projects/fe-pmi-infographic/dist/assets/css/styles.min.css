@@ -355,11 +355,13 @@ body {
 .column-numbers__number {
   font-size: 12rem;
   line-height: 12rem;
+  min-height: 12rem;
 }
 @media (min-width: 48em) {
   .column-numbers__number {
     font-size: 20rem;
     line-height: 20rem;
+    min-height: 20rem;
   }
 }
 .column-numbers__text {
@@ -591,11 +593,13 @@ body {
   display: flex;
   width: 90%;
   margin-left: auto;
+  min-height: 27rem;
 }
 @media (min-width: 64em) {
   .grid-with-images__picture {
     width: 40%;
     min-width: 45%;
+    height: 100vh;
   }
 }
 .grid-with-images__picture-img {
@@ -702,10 +706,12 @@ body {
 .grid-with-numbers__picture {
   display: flex;
   min-width: 31.5rem;
+  min-height: 15.7rem;
 }
 @media (min-width: 64em) {
   .grid-with-numbers__picture {
     min-width: 40rem;
+    min-height: 66rem;
   }
 }
 .grid-with-numbers__picture-img {

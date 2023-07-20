@@ -94,9 +94,11 @@
   &__picture {
     display: flex;
     min-width: 31.5rem;
+    min-height: 15.7rem;
 
     @include bp('large') {
       min-width: 40rem;
+      min-height: 66rem;
     }
 
     &-img {
