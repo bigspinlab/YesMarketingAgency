@@ -624,7 +624,7 @@ body {
   padding-bottom: 10rem;
 }
 .grid-with-numbers__headline {
-  padding: 10% 4%;
+  padding: 20% 4% 10% 4%;
   max-width: 40rem;
 }
 @media (min-width: 48em) {
@@ -887,7 +887,7 @@ body {
 .jumbotron-with-image__content-wrapper {
   max-width: 31rem;
   margin: 0 auto;
-  padding: 10% 4% 0 4%;
+  padding: 20% 4% 0 4%;
 }
 @media (min-width: 36em) {
   .jumbotron-with-image__content-wrapper {
