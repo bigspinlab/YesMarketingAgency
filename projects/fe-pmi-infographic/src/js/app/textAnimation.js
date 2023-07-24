@@ -4,6 +4,8 @@ const textAnimations = () => {
   const textContainers = gsap.utils.toArray(".js-gsap-text");
   const pinnedSection = document.querySelector(".js-gsap-pinned");
 
+  if (!textContainers.length || !pinnedSection) return;
+  
   const animationTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: pinnedSection,
