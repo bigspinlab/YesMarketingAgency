@@ -1,6 +1,7 @@
 # dependencies
 /projects/fe-boilerplate/node_modules
 /projects/fe-pmi-infographic/node_modules
+/projects/fe-astro-iqos/node_modules
 
 # production
 /projects/fe-boilerplate/dist
