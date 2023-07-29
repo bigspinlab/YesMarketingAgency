@@ -5,16 +5,27 @@ interface Props {
 
 const { className } = Astro.props;
 ---
+
 <section class={className}>
   <article class="article">
-    <slot >
-      <p>This is my fallback content, if there is no child passed into slot</p> 
-    </slot> 
+    <slot>
+      <p>This is my fallback content, if there is no child passed into slot</p>
+    </slot>
   </article>
 </section>
 
 <style>
-	.article{
+  .article {
     width: 100%;
+    padding: 20% 4% 0 4%;
+  }
+
+  @media screen and (min-width: 48em) {
+    .article {
+      padding-top: 20rem;
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 70rem;
+    }
   }
 </style>
