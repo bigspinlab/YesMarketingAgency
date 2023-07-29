@@ -2879,6 +2879,11 @@ synckit@^0.8.4:
     "@pkgr/utils" "^2.3.1"
     tslib "^2.5.0"
 
+the-new-css-reset@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/the-new-css-reset/-/the-new-css-reset-1.9.0.tgz#2e268fcb4a85bd91512c3ce8f8915ebf1f0dcd87"
+  integrity sha512-bKM9xgiVFTqSuWle952Xu/YWE7qYMzPHWxerO0edxjBfPIm2T4k2tRpIJ45IU7knY35Jr6Fb5P/TVm2RIsB//Q==
+
 titleize@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/titleize/-/titleize-3.0.0.tgz#71c12eb7fdd2558aa8a44b0be83b8a76694acd53"

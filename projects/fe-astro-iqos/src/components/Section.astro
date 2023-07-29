@@ -1,0 +1,20 @@
+---
+interface Props {
+  className: string;
+}
+
+const { className } = Astro.props;
+---
+<section class={className}>
+  <article class="article">
+    <slot >
+      <p>This is my fallback content, if there is no child passed into slot</p> 
+    </slot> 
+  </article>
+</section>
+
+<style>
+	.article{
+    width: 100%;
+  }
+</style>

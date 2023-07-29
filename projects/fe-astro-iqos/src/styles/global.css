@@ -1,0 +1,152 @@
+:root {
+  --base-font: 62.5%;
+  --iqos-light: "IQOS Light";
+  --iqos-regular: "IQOS Regular";
+  --iqos-bold: "IQOS Bold";
+  --black: #000;
+  --slate-original: #34303d;
+  --slate-light: #434148;
+  --soft-white-original: #fffdfb;
+  --soft-white-medium: #f2f2f2;
+  --soft-white-dark: #e2e0de;
+  --white: #fff;
+  --selection: #f60;
+  --amber-original: #e3813b;
+  --blue-light: #3d8cbd;
+  --blue-original: #287baf;
+  --blue-dark: #1b5f8b;
+  --turquoise-original: #00d1d2;
+  --red-original: #db3624;
+}
+
+/* //breakpoint vars
+$extra-small: 22.5em; //360px
+$small: 36em; //576px
+$medium: 48em; //768px
+$large: 64em; //1024px
+$extra-large: 75em; //1200px
+$wide: 90em; //1440px
+$extra-wide: 120em; //1920px */
+
+html {
+  font-size: var(--base-font);
+  background: var(--soft-white-medium);
+}
+
+code {
+  font-family: var(--iqos-regular);
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+::selection {
+  background-color: var(--turquoise-original);
+  color: var(--white);
+}
+
+body {
+  font-family: var(--iqos-regular);
+  min-height: 100vh;
+  width: 100vw;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  overflow-x: hidden;
+}
+
+.text {
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.headline {
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+}
+
+.font-family-regular {
+  font-family: var(--iqos-regular);
+  font-weight: 400;
+}
+
+.font-family-bold {
+  font-family: var(--iqos-bold);
+  font-weight: 700;
+}
+
+.font-family-light {
+  font-family: var(--iqos-light);
+  font-weight: 300;
+}
+
+.color-soft-white-original {
+  color: var(--soft-white-original);
+}
+
+.color-slate-original {
+  color: var(--slate-original);
+}
+
+.color-blue-original {
+  color: var(--blue-original);
+}
+
+.background-blue-original {
+  background-color: var(--blue-original);
+}
+
+.background-soft-white-original {
+  background-color: var(--soft-white-original);
+}
+
+.background-soft-white-medium {
+  background-color: var(--soft-white-medium);
+}
+
+.background-amber-original {
+  background-color: var(--amber-original);
+}
+
+.background-blue-light {
+  background-color: var(--blue-light);
+}
+
+.background-blue-original {
+  background-color: var(--blue-original);
+}
+
+.background-blue-dark {
+  background-color: var(--blue-dark);
+}
+
+.background-turquoise-original {
+  background-color: var(--turquoise-original);
+}
+
+@media screen and (min-width: 48em) {
+  .text {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+  }
+
+  .headline {
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+  }
+  
+}
