@@ -1,0 +1,12 @@
+---
+interface Props {
+  textColor: string;
+  borderColor: string;
+}
+
+const { textColor, borderColor } = Astro.props;
+---
+
+<h2 class={`headline ${textColor} ${borderColor}`}>
+  <slot>Place your Headline here</slot>
+</h2>
