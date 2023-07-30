@@ -1,0 +1,30 @@
+---
+import Headline from "./shared/Headline.astro";
+import Step from "./shared/Step.astro";
+import IconDeliveries from "./Icons/IconDeliveries.astro";
+import IconCollections from "./Icons/IconCollections.astro";
+
+---
+
+<section>
+  <article>
+    <Headline isHeadlineWhite={false} borderColor="turquoiseBorder">
+      Entregas e Recolhas de stock em <span>separado</span>
+    </Headline>
+    <p class='text-medium'>
+      As entregas e recolhas de stock têm datas fixas 
+    </p>
+    
+    <div class='columns'>
+      <div class='columns-item'>
+        <IconDeliveries />
+        <h3>Entregas</h3>
+        <p>Envio da encomenda às quartas-feiras com entrega às quintas (exceção às Ilhas)</p>
+      </div>
+      <div class='columns-item'>
+        <IconCollections />
+        <h3>Recolhas</h3>
+        <p>Recolhas ocorrem de duas em duas semanas, com base nas trocas realizadas nas duas semanas anteriores - às quartas-feiras</p>
+      </div>
+  </article>
+</section>
