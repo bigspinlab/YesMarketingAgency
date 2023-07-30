@@ -1,0 +1,37 @@
+---
+interface Props {
+  stepNumber: string;
+  isStepGreen: boolean;
+}
+
+const { stepNumber, isStepGreen } = Astro.props;
+---
+
+<div class:list={["step", { green: isStepGreen }]}>
+  <span class="text color-slate-original">
+    {stepNumber}
+  </span>
+</div>
+
+<style>
+  .step {
+    background-color: var(--soft-white-original);
+    border-radius: 50%;
+    width: 7.5rem;
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step.green {
+    background-color: var(--turquoise-original);
+  }
+
+  @media screen and (min-width: 48em) {
+    .step {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+</style>
