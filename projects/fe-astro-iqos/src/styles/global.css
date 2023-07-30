@@ -127,6 +127,11 @@ main {
   background-color: var(--amber-original);
 }
 
+.background-slate-original {
+  background-color: var(--slate-original);
+}
+
+
 .background-blue-light {
   background-color: var(--blue-light);
 }

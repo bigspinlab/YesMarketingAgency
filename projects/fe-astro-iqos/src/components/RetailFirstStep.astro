@@ -1,0 +1,25 @@
+---
+import Headline from "./shared/Headline.astro";
+import Step from "./shared/Step.astro";
+
+---
+
+<section>
+  <article>
+    <Headline isHeadlineWhite={false} borderColor="turquoiseBorder">
+      Como o <span>retalhista</span> processa a troca?
+    </Headline>
+    <div>
+      <Step isStepGreen stepNumber="1" />
+      <p>Faça login na Retail App</p>
+    </div>
+    <div>
+      <p>https://retalho.faturaiqos.pt</p>
+    </div>
+    <div>
+      <Step isStepGreen stepNumber="2" />
+      <p>Selecione <strong>Pedidos de Troca</strong></p>
+      <img src="../imgs/step-two.png" alt="second step">
+    </div>
+  </article>
+</section>
