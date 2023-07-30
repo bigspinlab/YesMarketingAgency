@@ -1,0 +1,57 @@
+---
+import Headline from "./shared/Headline.astro";
+import Step from "./shared/Step.astro";
+---
+
+<section class="background-turquoise-original">
+  <article>
+    <Headline isHeadlineWhite={false} borderColor="whiteBorder">
+      Qual o processo para a <span>receção</span> de encomendas?
+    </Headline>
+    <ul>
+      <li>
+        <div>
+          <Step isStepGreen={false} stepNumber="1" />
+          <p class="text-medium color-slate-original">
+            Visualizar nº da encomenda na Guia de Entrega: PO Nº 4799999999
+          </p>
+        </div>
+        <div>
+          <Step isStepGreen={false} stepNumber="2" />
+          <p class="text-medium color-slate-original">
+            Clique em Pedidos de Stock
+          </p>
+        </div>
+        <img src="" alt="" />
+      </li>
+      <li>
+        <div>
+          <Step isStepGreen={false} stepNumber="3" />
+          <p class="text-medium color-slate-original">
+            Selecione nº da encomenda que consta na guia de entrega
+          </p>
+        </div>
+
+        <img src="" alt="" />
+      </li>
+      <li>
+        <div>
+          <Step isStepGreen={false} stepNumber="4" />
+          <p class="text-medium color-slate-original">
+            Clique em Rececionar Encomenda
+          </p>
+        </div>
+        <img src="" alt="" />
+      </li>
+      <li>
+        <div>
+          <Step isStepGreen={false} stepNumber="5" />
+          <p class="text-medium color-slate-original">
+            Se a encomenda que recebeu fisicamente, estiver de acordo com o que consta no sistema, clicar em Aceitar Caso não esteja de acordo com o que consta no sistema, clicar em Reportar Erro
+          </p>
+        </div>
+        <img src="" alt="" />
+      </li>
+    </ul>
+  </article>
+</section>
