@@ -1,18 +1,28 @@
 ---
 interface Props {
   isHeadlineWhite: boolean;
-  borderColor: "white" | "turquoise" | "red" | "slate-original";
+  borderColor?:
+    | "whiteBorder"
+    | "turquoiseBorder"
+    | "redBorder"
+    | "slateOriginalBorder";
 }
 
-const { isHeadlineWhite, borderColor } = Astro.props;
+const { isHeadlineWhite = false, borderColor } = Astro.props;
 ---
 
-<h2 class:list={[`headline ${borderColor}`, { white: isHeadlineWhite }]}>
+<h2 class:list={[`headline ${borderColor}`, { textWhite: isHeadlineWhite }]}>
   <slot>Place your Headline here</slot>
 </h2>
 
-<style>
-  span::after {
+<style is:global>
+  span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  .headline > span::after {
     content: "";
     position: absolute;
     left: 0;
@@ -22,28 +32,24 @@ const { isHeadlineWhite, borderColor } = Astro.props;
     z-index: -1;
   }
 
-  .white {
-    span::after {
-      background-color: var(--soft-white-original);
-    }
+  .textWhite {
+    color: var(--soft-white-original);
   }
 
-  .turquoise {
-    span::after {
-      background-color: var(--turquoise-original);
-    }
+  .whiteBorder > span::after {
+    background-color: var(--soft-white-original);
   }
 
-  .red {
-    span::after {
-      background-color: var(--red-original);
-    }
+  .turquoiseBorder > span::after {
+    background-color: var(--turquoise-original);
   }
 
-  .slate-original {
-    span::after {
-      background-color: var(--slate-original);
-    }
+  .redBorder > span::after {
+    background-color: var(--red-original);
+  }
+
+  .slateOriginalBorder > span::after {
+    background-color: var(--slate-original);
   }
 
   @media screen and (min-width: 48em) {

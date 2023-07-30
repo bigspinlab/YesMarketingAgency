@@ -1,0 +1,92 @@
+---
+import Headline from "./shared/Headline.astro";
+import IconArrowDown from "./Icons/IconArrowDown.astro";
+import IconWebsite from "./Icons/IconWebsite.astro";
+import IconChat from "./Icons/IconChat.astro";
+import IconThumbUp from "./Icons/IconThumbUp.astro";
+import IconRingPhone from "./Icons/IconRingPhone.astro";
+import IconHouse from "./Icons/IconHouse.astro";
+---
+
+<section class="masthead">
+  <article class="masthead-article">
+    <Headline isHeadlineWhite>Processo de Troca</Headline>
+  </article>
+  <article class="masthead-content background-turquoise-original">
+    <div>
+      <p class="text color-soft-white-original">
+        As trocas são solicitadas pelo <span>consumidor</span> através dos canais
+        de suporte
+      </p>
+    </div>
+    <IconArrowDown />
+
+    <ul class="masthead-list">
+      <li class="masthead-list__item">
+        <IconWebsite />
+        <h3>IQOS.pt</h3>
+        <p>Através do site, na área de ajuda</p>
+      </li>
+      <li>
+        <IconChat />
+        <h3>Live chat</h3>
+        <p>Disponível das 09h-00h no canto inferior direito do site iqos.pt</p>
+      </li>
+      <li>
+        <IconThumbUp />
+        <h3>Facebook</h3>
+        <p>Chat disponível das 09h-00h na página de apoio ao cliente</p>
+      </li>
+      <li>
+        <IconRingPhone />
+        <h3>Telefone</h3>
+        <p>Disponível das 9h-21h através do 800 200 098</p>
+      </li>
+    </ul>
+
+    <IconArrowDown />
+
+    <div>
+      <IconHouse />
+
+      <div>
+        <p class="text color-soft-white-original">
+          Consumidor escolhe o Ponto de Venda preferencial para <span
+            >efetuar a troca</span
+          >
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
+<style>
+  .masthead {
+    width: 100%;
+  }
+
+  .masthead-article {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("../imgs/masthead.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+  .masthead-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 48em) {
+    .masthead-article {
+      height: 60vh;
+    }
+  }
+</style>
