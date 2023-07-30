@@ -1,12 +1,55 @@
 ---
 interface Props {
-  textColor: string;
-  borderColor: string;
+  isHeadlineWhite: boolean;
+  borderColor: "white" | "turquoise" | "red" | "slate-original";
 }
 
-const { textColor, borderColor } = Astro.props;
+const { isHeadlineWhite, borderColor } = Astro.props;
 ---
 
-<h2 class={`headline ${textColor} ${borderColor}`}>
+<h2 class:list={[`headline ${borderColor}`, { white: isHeadlineWhite }]}>
   <slot>Place your Headline here</slot>
 </h2>
+
+<style>
+  span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.2rem;
+    height: 0.5rem;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .white {
+    span::after {
+      background-color: var(--soft-white-original);
+    }
+  }
+
+  .turquoise {
+    span::after {
+      background-color: var(--turquoise-original);
+    }
+  }
+
+  .red {
+    span::after {
+      background-color: var(--red-original);
+    }
+  }
+
+  .slate-original {
+    span::after {
+      background-color: var(--slate-original);
+    }
+  }
+
+  @media screen and (min-width: 48em) {
+    span::after {
+      height: 0.8rem;
+      bottom: 0.6rem;
+    }
+  }
+</style>
