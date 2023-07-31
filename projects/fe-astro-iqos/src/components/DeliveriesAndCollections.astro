@@ -1,13 +1,13 @@
 ---
 import Headline from "./shared/Headline.astro";
-import Step from "./shared/Step.astro";
 import IconDeliveries from "./Icons/IconDeliveries.astro";
 import IconCollections from "./Icons/IconCollections.astro";
+import Section from "./shared/Section.astro";
+
 
 ---
 
-<section>
-  <article>
+<Section>
     <Headline isHeadlineWhite={false} borderColor="turquoiseBorder">
       Entregas e Recolhas de stock em <span>separado</span>
     </Headline>
@@ -26,5 +26,5 @@ import IconCollections from "./Icons/IconCollections.astro";
         <h3>Recolhas</h3>
         <p>Recolhas ocorrem de duas em duas semanas, com base nas trocas realizadas nas duas semanas anteriores - às quartas-feiras</p>
       </div>
-  </article>
-</section>
+
+</Section>
