@@ -1,25 +1,54 @@
 ---
 import Headline from "./shared/Headline.astro";
 import Step from "./shared/Step.astro";
-
 ---
 
-<section>
-  <article>
+<section class="jumbotron background-soft-white-medium">
+  <article class="jumbotron-article">
     <Headline isHeadlineWhite={false} borderColor="turquoiseBorder">
       Como o <span>retalhista</span> processa a troca?
     </Headline>
-    <div>
+    <div class="jumbotron-step">
       <Step isStepGreen stepNumber="1" />
-      <p>Faça login na Retail App</p>
+      <p class="text-medium text-align-center color-slate-original">Faça login na Retail App</p>
     </div>
-    <div>
-      <p>https://retalho.faturaiqos.pt</p>
+    <div class="jumbotron-link">
+      <p class="text-medium text-align-center color-slate-original">https://retalho.faturaiqos.pt</p>
     </div>
-    <div>
+    <div class="jumbotron-step">
       <Step isStepGreen stepNumber="2" />
-      <p>Selecione <strong>Pedidos de Troca</strong></p>
-      <img src="../imgs/step-two.png" alt="second step">
+      <p class="text-medium text-align-center color-slate-original">Selecione <strong>Pedidos de Troca</strong></p>
     </div>
+    <img src="../imgs/step-two.png" alt="second step" />
+
   </article>
 </section>
+
+<style>
+  .jumbotron {
+    width: 100%;
+  }
+
+  .jumbotron-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12rem 0;
+  }
+
+  .jumbotron-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+
+  @media screen and (min-width: 48em) {
+    .jumbotron-article {
+      padding: 19rem 12rem;
+    }
+  }
+</style>
