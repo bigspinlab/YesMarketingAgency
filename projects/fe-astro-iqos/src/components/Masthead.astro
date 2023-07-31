@@ -13,48 +13,75 @@ import IconHouse from "./Icons/IconHouse.astro";
     <Headline isHeadlineWhite>Processo de Troca</Headline>
   </article>
   <article class="masthead-content background-turquoise-original">
-    <div>
-      <p class="text color-soft-white-original">
+    <div class="masthead-content-wrapper">
+      <p
+        class="masthead-content__text text text-align-center color-soft-white-original"
+      >
         As trocas são solicitadas pelo <span>consumidor</span> através dos canais
         de suporte
       </p>
-    </div>
-    <IconArrowDown />
 
-    <ul class="masthead-list">
-      <li class="masthead-list__item">
-        <IconWebsite />
-        <h3>IQOS.pt</h3>
-        <p>Através do site, na área de ajuda</p>
-      </li>
-      <li>
-        <IconChat />
-        <h3>Live chat</h3>
-        <p>Disponível das 09h-00h no canto inferior direito do site iqos.pt</p>
-      </li>
-      <li>
-        <IconThumbUp />
-        <h3>Facebook</h3>
-        <p>Chat disponível das 09h-00h na página de apoio ao cliente</p>
-      </li>
-      <li>
-        <IconRingPhone />
-        <h3>Telefone</h3>
-        <p>Disponível das 9h-21h através do 800 200 098</p>
-      </li>
-    </ul>
+      <IconArrowDown />
 
-    <IconArrowDown />
-
-    <div>
-      <IconHouse />
-
-      <div>
-        <p class="text color-soft-white-original">
-          Consumidor escolhe o Ponto de Venda preferencial para <span
-            >efetuar a troca</span
+      <ul class="masthead-list">
+        <li class="masthead-list__item">
+          <IconWebsite />
+          <h3
+            class="text text-align-center font-family-bold color-slate-original"
           >
-        </p>
+            IQOS.pt
+          </h3>
+          <p class="text-small text-align-center color-slate-original">
+            Através do site, na área de ajuda
+          </p>
+        </li>
+        <li class="masthead-list__item">
+          <IconChat />
+          <h3
+            class="text text-align-center font-family-bold color-slate-original"
+          >
+            Live chat
+          </h3>
+          <p class="text-small text-align-center color-slate-original">
+            Disponível das 09h-00h no canto inferior direito do site iqos.pt
+          </p>
+        </li>
+        <li class="masthead-list__item">
+          <IconThumbUp />
+          <h3
+            class="text text-align-center font-family-bold color-slate-original"
+          >
+            Facebook
+          </h3>
+          <p class="text-small text-align-center color-slate-original">
+            Chat disponível das 09h-00h na página de apoio ao cliente
+          </p>
+        </li>
+        <li class="masthead-list__item">
+          <IconRingPhone />
+          <h3
+            class="text text-align-center font-family-bold color-slate-original"
+          >
+            Telefone
+          </h3>
+          <p class="text-small text-align-center color-slate-original">
+            Disponível das 9h-21h através do 800 200 098
+          </p>
+        </li>
+      </ul>
+
+      <IconArrowDown />
+
+      <div class="masthead-content__footer">
+        <IconHouse />
+
+        <div>
+          <p class="text text-align-center color-soft-white-original">
+            Consumidor escolhe o Ponto de Venda preferencial para <span
+              >efetuar a troca</span
+            >
+          </p>
+        </div>
       </div>
     </div>
   </article>
@@ -78,15 +105,98 @@ import IconHouse from "./Icons/IconHouse.astro";
 
   .masthead-content {
     width: 100%;
+  }
+
+  .masthead-content-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 6rem 4% 14rem 4%;
+  }
+
+  .masthead-content__text {
+    max-width: 33rem;
+    margin: 0 auto 6rem auto;
+  }
+
+  .masthead-content__text span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  .masthead-content__text > span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    height: 0.5rem;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--slate-original);
+  }
+
+  .masthead-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin: 9rem auto;
+  }
+
+  .masthead-list__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .masthead-content__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 9rem;
   }
 
   @media screen and (min-width: 48em) {
     .masthead-article {
       height: 60vh;
     }
+
+    .masthead-content-wrapper {
+      padding: 7rem 0 23.5rem 0;
+      max-width: 70rem;
+      margin: 0 auto;
+    }
+
+    .masthead-content__text {
+      max-width: 69rem;
+      margin: 0 auto 8rem auto;
+    }
+
+    .masthead-list {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10rem;
+      margin: 12rem auto;
+    }
+
+    .masthead-list__item {
+      width: 40%;
+      height: 22rem;
+    }
+
+    .masthead-content__footer {
+    margin-top: 12rem;
+  }
   }
 </style>
