@@ -39,6 +39,7 @@ code {
 }
 
 strong {
+  font-family: var(--iqos-bold);
   font-weight: var(--fw-bold);
 }
 

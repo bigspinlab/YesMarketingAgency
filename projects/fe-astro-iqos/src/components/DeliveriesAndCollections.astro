@@ -3,28 +3,107 @@ import Headline from "./shared/Headline.astro";
 import IconDeliveries from "./Icons/IconDeliveries.astro";
 import IconCollections from "./Icons/IconCollections.astro";
 import Section from "./shared/Section.astro";
-
-
 ---
 
-<Section>
-    <Headline isHeadlineWhite={false} borderColor="turquoiseBorder">
-      Entregas e Recolhas de stock em <span>separado</span>
-    </Headline>
-    <p class='text-medium'>
-      As entregas e recolhas de stock têm datas fixas 
-    </p>
-    
-    <div class='columns'>
-      <div class='columns-item'>
-        <IconDeliveries />
-        <h3>Entregas</h3>
-        <p>Envio da encomenda às quartas-feiras com entrega às quintas (exceção às Ilhas)</p>
-      </div>
-      <div class='columns-item'>
-        <IconCollections />
-        <h3>Recolhas</h3>
-        <p>Recolhas ocorrem de duas em duas semanas, com base nas trocas realizadas nas duas semanas anteriores - às quartas-feiras</p>
-      </div>
+<Section className="jumbotron">
+  <Headline
+    isHeadlineWhite={false}
+    borderColor="turquoiseBorder"
+    className="max-width"
+  >
+    Entregas e Recolhas de stock em <span>separado</span>
+  </Headline>
+  <p class="content-text text-medium text-align-center color-slate-original">
+    As entregas e recolhas de stock têm <strong>datas fixas</strong>
+  </p>
 
+  <div class="columns">
+    <div class="columns-item">
+      <IconDeliveries />
+      <h3
+        class="headline text-align-center color-slate-original font-family-bold"
+      >
+        Entregas
+      </h3>
+      <p class="text-small text-align-center color-slate-original">
+        Envio da encomenda às quartas-feiras com entrega às quintas (exceção às
+        Ilhas)
+      </p>
+    </div>
+    <div class="columns-item">
+      <IconCollections />
+      <h3
+        class="headline text-align-center color-slate-original font-family-bold"
+      >
+        Recolhas
+      </h3>
+      <p class="text-small text-align-center color-slate-original">
+        Recolhas ocorrem de duas em duas semanas, com base nas trocas realizadas
+        nas duas semanas anteriores - às quartas-feiras
+      </p>
+    </div>
+  </div>
 </Section>
+<style>
+  h2 {
+    max-width: 32.8rem;
+  }
+  .jumbotron {
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+  }
+  .content-text {
+    margin: 8.9rem auto;
+    max-width: 32.8rem;
+  }
+  .columns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .columns-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 24.4rem;
+  }
+
+  .headline {
+    font-size: 2.7rem;
+    line-height: 3.6rem;
+    margin: 1.8rem auto 1rem auto;
+  }
+
+  @media screen and (min-width: 48em) {
+    h2 {
+      max-width: 50rem;
+    }
+    .jumbotron {
+      padding-top: 22.6rem;
+      padding-bottom: 27rem;
+    }
+    .headline {
+      font-size: 4.8rem;
+      line-height: 6.6rem;
+      margin: 4rem auto 1.4rem auto;
+    }
+
+    .content-text {
+      margin: 15.7rem auto;
+      max-width: 38.6rem;
+    }
+
+    .columns {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .columns-item {
+      max-width: 28.5rem;
+    }
+  }
+</style>

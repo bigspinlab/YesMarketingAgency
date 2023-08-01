@@ -1,6 +1,7 @@
 ---
 interface Props {
   isHeadlineWhite: boolean;
+  className?: string;
   borderColor?:
     | "whiteBorder"
     | "turquoiseBorder"
@@ -8,10 +9,10 @@ interface Props {
     | "slateOriginalBorder";
 }
 
-const { isHeadlineWhite = false, borderColor } = Astro.props;
+const { isHeadlineWhite = false, borderColor, className } = Astro.props;
 ---
 
-<h2 class:list={[`headline ${borderColor}`, { textWhite: isHeadlineWhite }]}>
+<h2 class:list={[`headline ${borderColor} ${className}`, { textWhite: isHeadlineWhite }]}>
   <slot>Place your Headline here</slot>
 </h2>
 
