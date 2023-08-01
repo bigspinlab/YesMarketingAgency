@@ -4,11 +4,15 @@ import Step from "./shared/Step.astro";
 import Section from "./shared/Section.astro";
 ---
 
-<Section className="background-turquoise-original">
-  <Headline isHeadlineWhite={false} borderColor="whiteBorder">
+<Section className="columns-jumbotron background-turquoise-original">
+  <Headline
+    className="columns-headline"
+    isHeadlineWhite={false}
+    borderColor="whiteBorder"
+  >
     Preparação da <span>recolha</span> de stock avariado
   </Headline>
-  <div class="columns">
+  <div class="columns-wrapper">
     <div class="columns-item">
       <svg
         width="692"
@@ -16,6 +20,7 @@ import Section from "./shared/Section.astro";
         viewBox="0 0 692 750"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        class="columns-item-image"
       >
         <rect width="692" height="750" rx="18" fill="#FFFDFB"></rect>
         <path
@@ -489,21 +494,24 @@ import Section from "./shared/Section.astro";
     </div>
     <ul class="columns-item">
       <li class="list-item">
-        <Step isTextWhite={false} isStepGreen={false} stepNumber="1" >
-          Preenchimento da Guia de Recolha com as quantidades a serem
-          recolhidas, por modelo e cor
+        <Step isTextWhite={false} isStepGreen={false} stepNumber="1">
+          Preenchimento da <strong>Guia de Recolha</strong> com as quantidades a
+          serem recolhidas, por modelo e cor
         </Step>
       </li>
       <li class="list-item">
-        <Step isTextWhite={false} isStepGreen={false} stepNumber="2" >
-          Colocação dos sacos médios + Guia de Recolha num saco grande e selar o
-          saco com bracelete inviolável
+        <Step isTextWhite={false} isStepGreen={false} stepNumber="2">
+          Colocação dos <strong>sacos médios + Guia de Recolha</strong> num <strong
+            >saco grande</strong
+          > e selar o saco com <strong>bracelete inviolável</strong>
         </Step>
       </li>
       <li class="list-item">
-        <Step isTextWhite={false} isStepGreen={false} stepNumber="3" >
-          Ponto de venda será notificado antes da recolha via e-mail e SMS, para
-          posteriormente um estafeta não dedicado recolher o saco
+        <Step isTextWhite={false} isStepGreen={false} stepNumber="3">
+          Ponto de venda será <strong>notificado</strong> antes da recolha via e-mail
+          e SMS, para posteriormente um estafeta não dedicado <strong
+            >recolher o saco</strong
+          >
         </Step>
       </li>
     </ul>
@@ -511,5 +519,62 @@ import Section from "./shared/Section.astro";
 </Section>
 
 <style>
+  .columns-jumbotron {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  .columns-headline {
+    max-width: 32.8rem;
+    margin: 0 auto;
+  }
 
+  .columns-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11.6rem;
+    gap: 5rem;
+  }
+
+  .columns-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .columns-item-image {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 48em) {
+    .columns-headline {
+      max-width: 70rem;
+    }
+  }
+
+  @media screen and (min-width: 75em) {
+    .columns-jumbotron {
+      padding-top: 19rem;
+      padding-bottom: 12rem;
+    }
+
+    .columns-wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 12rem;
+      max-width: 152rem;
+      margin: 16.6rem auto 0;
+    }
+
+    .columns-item {
+      align-items: flex-start;
+      gap: 8rem;
+    }
+
+    .list-item {
+      max-width: 38.7rem;
+    }
+  }
 </style>
