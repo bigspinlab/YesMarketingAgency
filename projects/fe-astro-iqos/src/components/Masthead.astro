@@ -10,7 +10,9 @@ import IconHouse from "./Icons/IconHouse.astro";
 
 <section class="masthead">
   <article class="masthead-article">
-    <Headline isHeadlineWhite>Processo de Troca</Headline>
+    <Headline className="masthead-headline" isHeadlineWhite>
+      Processo de Troca
+    </Headline>
   </article>
   <article class="masthead-content background-turquoise-original">
     <div class="masthead-content-wrapper">
@@ -76,7 +78,9 @@ import IconHouse from "./Icons/IconHouse.astro";
         <IconHouse />
 
         <div>
-          <p class="masthead-content__text text text-align-center color-soft-white-original">
+          <p
+            class="masthead-content__text text text-align-center color-soft-white-original"
+          >
             Consumidor escolhe o Ponto de Venda preferencial para <span
               >efetuar a troca</span
             >
@@ -89,6 +93,11 @@ import IconHouse from "./Icons/IconHouse.astro";
 <style>
   .masthead {
     width: 100%;
+  }
+
+  .masthead-headline {
+    max-width: 25rem;
+    margin: 0 auto;
   }
 
   .masthead-article {
@@ -167,6 +176,10 @@ import IconHouse from "./Icons/IconHouse.astro";
   }
 
   @media screen and (min-width: 48em) {
+    .masthead-headline {
+      max-width: 49rem;
+    }
+
     .masthead-article {
       height: 60vh;
     }
@@ -198,7 +211,7 @@ import IconHouse from "./Icons/IconHouse.astro";
     }
 
     .masthead-content__footer {
-    margin-top: 12rem;
-  }
+      margin-top: 12rem;
+    }
   }
 </style>

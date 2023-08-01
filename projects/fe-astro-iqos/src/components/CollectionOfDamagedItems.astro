@@ -487,36 +487,29 @@ import Section from "./shared/Section.astro";
         </defs>
       </svg>
     </div>
-    <div class="columns-item">
-      <div class="step">
-        <Step isStepGreen={false} stepNumber="1" />
-        <p class="text-medium color-slate-original">
+    <ul class="columns-item">
+      <li class="list-item">
+        <Step isTextWhite={false} isStepGreen={false} stepNumber="1" >
           Preenchimento da Guia de Recolha com as quantidades a serem
           recolhidas, por modelo e cor
-        </p>
-      </div>
-      <div class="step">
-        <Step isStepGreen={false} stepNumber="2" />
-        <p class="text-medium color-slate-original">
+        </Step>
+      </li>
+      <li class="list-item">
+        <Step isTextWhite={false} isStepGreen={false} stepNumber="2" >
           Colocação dos sacos médios + Guia de Recolha num saco grande e selar o
           saco com bracelete inviolável
-        </p>
-      </div>
-      <div class="step">
-        <Step isStepGreen={false} stepNumber="3" />
-        <p class="text-medium color-slate-original">
+        </Step>
+      </li>
+      <li class="list-item">
+        <Step isTextWhite={false} isStepGreen={false} stepNumber="3" >
           Ponto de venda será notificado antes da recolha via e-mail e SMS, para
-          posteriormente um estafeta não dedicado recolher o saco ​
-        </p>
-      </div>
-    </div>
+          posteriormente um estafeta não dedicado recolher o saco
+        </Step>
+      </li>
+    </ul>
   </div>
 </Section>
 
 <style>
-  .step {
-    display: flex;
-    margin-bottom: 2rem;
-    gap: 1rem;
-  }
+
 </style>

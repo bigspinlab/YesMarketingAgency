@@ -12,12 +12,19 @@ interface Props {
 const { isHeadlineWhite = false, borderColor, className } = Astro.props;
 ---
 
-<h2 class:list={[`headline ${borderColor} ${className}`, { textWhite: isHeadlineWhite }]}>
+<h2
+  class:list={[
+    `headline ${borderColor} ${className ?? ""}`,
+    { textWhite: isHeadlineWhite },
+  ]}
+>
   <slot>Place your Headline here</slot>
 </h2>
 
 <style is:global>
   .headline {
+    font-family: var(--iqos-bold);
+    font-weight: 700;
     text-align: center;
   }
   span {
@@ -30,8 +37,8 @@ const { isHeadlineWhite = false, borderColor, className } = Astro.props;
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0.2rem;
-    height: 0.5rem;
+    bottom: -0.5rem;
+    height: 1rem;
     width: 100%;
     z-index: -1;
   }

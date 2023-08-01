@@ -2,36 +2,87 @@
 interface Props {
   stepNumber: string;
   isStepGreen: boolean;
+  isTextWhite: boolean;
+  className?: string;
+  isStepCenteredWithText?: boolean;
 }
 
-const { stepNumber, isStepGreen } = Astro.props;
+const {
+  stepNumber,
+  isStepGreen,
+  isTextWhite,
+  className,
+  isStepCenteredWithText,
+} = Astro.props;
 ---
 
-<div class:list={["step", { green: isStepGreen }]}>
-  <span class="text color-slate-original">
-    {stepNumber}
-  </span>
+<div
+  class:list={[
+    `step-wrapper ${className ?? ""}`,
+    { stepCentered: isStepCenteredWithText },
+  ]}
+>
+  <div class:list={["step", { green: isStepGreen }]}>
+    <span class="text color-slate-original">
+      {stepNumber}
+    </span>
+  </div>
+  <p
+    class:list={[
+      "step-text font-family-regular color-slate-original",
+      { textWhite: isTextWhite },
+    ]}
+  >
+    <slot />
+  </p>
 </div>
 
 <style>
+  .step-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.4rem;
+  }
+
+  .stepCentered {
+    align-items: center;
+  }
+
   .step {
     background-color: var(--soft-white-original);
     border-radius: 1rem;
-    width: 7.5rem;
-    height: 7.5rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step-text {
+    font-size: 1.9rem;
+    line-height: 2.7rem;
   }
 
   .step.green {
     background-color: var(--turquoise-original);
   }
 
+  .textWhite {
+    color: var(--soft-white-original);
+  }
+
   @media screen and (min-width: 48em) {
     .step {
-      width: 5rem;
-      height: 5rem;
+      padding: 1.4rem 3rem;
+    }
+
+    .step-wrapper {
+      gap: 2.5rem;
+    }
+
+    .step-text {
+      font-size: 2.8rem;
+      line-height: 3.8rem;
     }
   }
 </style>

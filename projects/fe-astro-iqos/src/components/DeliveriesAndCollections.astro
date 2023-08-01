@@ -9,7 +9,7 @@ import Section from "./shared/Section.astro";
   <Headline
     isHeadlineWhite={false}
     borderColor="turquoiseBorder"
-    className="max-width"
+    className="jumbotron-headline"
   >
     Entregas e Recolhas de stock em <span>separado</span>
   </Headline>
@@ -21,7 +21,7 @@ import Section from "./shared/Section.astro";
     <div class="columns-item">
       <IconDeliveries />
       <h3
-        class="headline text-align-center color-slate-original font-family-bold"
+        class="headline-small text-align-center color-slate-original font-family-bold"
       >
         Entregas
       </h3>
@@ -33,7 +33,7 @@ import Section from "./shared/Section.astro";
     <div class="columns-item">
       <IconCollections />
       <h3
-        class="headline text-align-center color-slate-original font-family-bold"
+        class="headline-small text-align-center color-slate-original font-family-bold"
       >
         Recolhas
       </h3>
@@ -45,8 +45,9 @@ import Section from "./shared/Section.astro";
   </div>
 </Section>
 <style>
-  h2 {
+  .jumbotron-headline {
     max-width: 32.8rem;
+    margin: 0 auto;
   }
   .jumbotron {
     padding-top: 12rem;
@@ -71,21 +72,21 @@ import Section from "./shared/Section.astro";
     max-width: 24.4rem;
   }
 
-  .headline {
+  .headline-small {
     font-size: 2.7rem;
     line-height: 3.6rem;
     margin: 1.8rem auto 1rem auto;
   }
 
   @media screen and (min-width: 48em) {
-    h2 {
-      max-width: 50rem;
+    .jumbotron-headline {
+      max-width: 70rem;
     }
     .jumbotron {
       padding-top: 22.6rem;
       padding-bottom: 27rem;
     }
-    .headline {
+    .headline-small {
       font-size: 4.8rem;
       line-height: 6.6rem;
       margin: 4rem auto 1.4rem auto;
