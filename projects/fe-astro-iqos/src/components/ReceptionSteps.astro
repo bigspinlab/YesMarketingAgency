@@ -14,7 +14,7 @@ import Step from "./shared/Step.astro";
     </Headline>
     <ul class="block-list">
       <li class="block-list-item">
-        <div class="block-list-item__wrapper first">
+        <div class="block-list-item__wrapper first" data-gsap="fade-up" data-gsap-delay="200">
           <div class="block-list-item__step-wrapper">
             <Step
               className="block-list-item__step"
@@ -52,7 +52,7 @@ import Step from "./shared/Step.astro";
         </div>
       </li>
       <li class="block-list-item">
-        <div class="block-list-item__wrapper second">
+        <div class="block-list-item__wrapper second" data-gsap="fade-up" data-gsap-delay="400">
           <Step
             className="block-list-item__step"
             isTextWhite={false}
@@ -80,7 +80,7 @@ import Step from "./shared/Step.astro";
         </div>
       </li>
       <li class="block-list-item">
-        <div class="block-list-item__wrapper third">
+        <div class="block-list-item__wrapper third" data-gsap="fade-up" data-gsap-delay="600">
           <Step
             className="block-list-item__step"
             isTextWhite={false}
@@ -108,7 +108,7 @@ import Step from "./shared/Step.astro";
         </div>
       </li>
       <li class="block-list-item">
-        <div class="block-list-item__wrapper fourth">
+        <div class="block-list-item__wrapper fourth" data-gsap="fade-up" data-gsap-delay="800">
           <Step
             className="block-list-item__step big"
             isTextWhite={false}

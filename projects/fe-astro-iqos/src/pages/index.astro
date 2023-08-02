@@ -1,30 +1,41 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
 import "the-new-css-reset/css/reset.css";
-import Masthead from '../components/Masthead.astro';
-import RetailFirstStep from '../components/RetailFirstStep.astro';
-import RetailSecondStep from '../components/RetailSecondStep.astro';
-import ReceptionSteps from '../components/ReceptionSteps.astro';
-import DeliveriesAndCollections from '../components/DeliveriesAndCollections.astro';
-import DeliveryNewStock from '../components/DeliveryNewStock.astro';
-import CollectionOfDamagedItems from '../components/CollectionOfDamagedItems.astro';
-import Diagrams from '../components/Resolutions.astro';
-
+import Masthead from "../components/Masthead.astro";
+import RetailFirstStep from "../components/RetailFirstStep.astro";
+import RetailSecondStep from "../components/RetailSecondStep.astro";
+import ReceptionSteps from "../components/ReceptionSteps.astro";
+import DeliveriesAndCollections from "../components/DeliveriesAndCollections.astro";
+import DeliveryNewStock from "../components/DeliveryNewStock.astro";
+import CollectionOfDamagedItems from "../components/CollectionOfDamagedItems.astro";
+import Resolutions from "../components/Resolutions.astro";
 ---
 
-<Layout title="IQOS - Together. Forward." description='Curso 13 Módulo 2'>
-	<header style={{display: "none"}} />
-	<h1 style={{display: "none"}}>IQOS - Together. Forward. - Curso 13 Módulo 2</h1>
-	<main>
-		<Masthead />
-		<RetailFirstStep />
-		<RetailSecondStep />
-		<Diagrams />
-		<CollectionOfDamagedItems />
-		<DeliveryNewStock />
-		<DeliveriesAndCollections />
-		<ReceptionSteps />
-	</main>
-	<Footer />
+<Layout title="IQOS - Together. Forward." description="Curso 13 Módulo 2">
+  <header style={{ display: "none" }}></header>
+  <h1 style={{ display: "none" }}>
+    IQOS - Together. Forward. - Curso 13 Módulo 2
+  </h1>
+  <main>
+    <Masthead />
+    <RetailFirstStep />
+    <RetailSecondStep />
+    <Resolutions />
+    <CollectionOfDamagedItems />
+    <DeliveryNewStock />
+    <DeliveriesAndCollections />
+    <ReceptionSteps />
+  </main>
+  <Footer />
 </Layout>
+
+<script
+  is:inline
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+  defer></script>
+<script
+  is:inline
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+  defer></script>
+<script is:inline src="../js/app.js" defer></script>

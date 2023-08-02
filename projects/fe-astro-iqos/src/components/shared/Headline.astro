@@ -17,6 +17,7 @@ const { isHeadlineWhite = false, borderColor, className } = Astro.props;
     `headline ${borderColor} ${className ?? ""}`,
     { textWhite: isHeadlineWhite },
   ]}
+  data-gsap="fade-up"
 >
   <slot>Place your Headline here</slot>
 </h2>

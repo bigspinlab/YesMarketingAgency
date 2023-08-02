@@ -13,12 +13,12 @@ import Section from "./shared/Section.astro";
   >
     Entregas e Recolhas de stock em <span>separado</span>
   </Headline>
-  <p class="content-text text-medium text-align-center color-slate-original">
+  <p class="content-text text-medium text-align-center color-slate-original" data-gsap="fade-up" data-gsap-delay="200">
     As entregas e recolhas de stock têm <strong>datas fixas</strong>
   </p>
 
   <div class="columns">
-    <div class="columns-item">
+    <div class="columns-item" data-gsap="fade-from-left" data-gsap-delay="400">
       <IconDeliveries />
       <h3
         class="headline-small text-align-center color-slate-original font-family-bold"
@@ -30,7 +30,7 @@ import Section from "./shared/Section.astro";
         Ilhas)
       </p>
     </div>
-    <div class="columns-item">
+    <div class="columns-item" data-gsap="fade-from-right" data-gsap-delay="400">
       <IconCollections />
       <h3
         class="headline-small text-align-center color-slate-original font-family-bold"

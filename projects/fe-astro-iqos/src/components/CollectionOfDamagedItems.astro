@@ -13,7 +13,7 @@ import Section from "./shared/Section.astro";
     Preparação da <span>recolha</span> de stock avariado
   </Headline>
   <div class="columns-wrapper">
-    <div class="columns-item">
+    <div class="columns-item" data-gsap="fade-from-left" data-gsap-delay="200">
       <svg
         width="692"
         height="750"
@@ -493,20 +493,20 @@ import Section from "./shared/Section.astro";
       </svg>
     </div>
     <ul class="columns-item">
-      <li class="list-item">
+      <li class="list-item" data-gsap="fade-up" data-gsap-delay="400">
         <Step isTextWhite={false} isStepGreen={false} stepNumber="1">
           Preenchimento da <strong>Guia de Recolha</strong> com as quantidades a
           serem recolhidas, por modelo e cor
         </Step>
       </li>
-      <li class="list-item">
+      <li class="list-item" data-gsap="fade-up" data-gsap-delay="500">
         <Step isTextWhite={false} isStepGreen={false} stepNumber="2">
           Colocação dos <strong>sacos médios + Guia de Recolha</strong> num <strong
             >saco grande</strong
           > e selar o saco com <strong>bracelete inviolável</strong>
         </Step>
       </li>
-      <li class="list-item">
+      <li class="list-item" data-gsap="fade-up" data-gsap-delay="600">
         <Step isTextWhite={false} isStepGreen={false} stepNumber="3">
           Ponto de venda será <strong>notificado</strong> antes da recolha via e-mail
           e SMS, para posteriormente um estafeta não dedicado <strong

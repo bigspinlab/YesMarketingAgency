@@ -13,7 +13,7 @@ import Step from "./shared/Step.astro";
       Como o <span>retalhista</span> processa a troca?
     </Headline>
     <div class="jumbotron-content">
-      <div class="jumbotron-step">
+      <div class="jumbotron-step" data-gsap="fade-up" data-gsap-delay="200">
         <Step
           isStepCenteredWithText
           isTextWhite={false}
@@ -23,12 +23,12 @@ import Step from "./shared/Step.astro";
           Faça login na Retail App
         </Step>
       </div>
-      <div class="jumbotron-link">
+      <div class="jumbotron-link" data-gsap="fade-up" data-gsap-delay="300">
         <p class="jumbotron-link-text text-align-center color-slate-original">
           https://retalho.faturaiqos.pt
         </p>
       </div>
-      <div class="jumbotron-step">
+      <div class="jumbotron-step" data-gsap="fade-up" data-gsap-delay="400">
         <Step
           isStepCenteredWithText
           isTextWhite={false}
@@ -40,7 +40,7 @@ import Step from "./shared/Step.astro";
       </div>
     </div>
 
-    <img class="jumbotron-image" src="../imgs/step-two.png" alt="second step" />
+    <img class="jumbotron-image" src="../imgs/step-two.png" alt="second step" data-gsap="fade-up" data-gsap-delay="300" />
   </article>
 </section>
 
