@@ -1,57 +1,263 @@
 ---
 import Headline from "./shared/Headline.astro";
 import Step from "./shared/Step.astro";
+import Section from "./shared/Section.astro";
 ---
 
-<section class="background-turquoise-original">
-  <article>
-    <Headline isHeadlineWhite={false} borderColor="whiteBorder">
+<section class="block background-turquoise-original">
+  <article class="block-article">
+    <Headline
+      className="block-headline"
+      isHeadlineWhite={false}
+      borderColor="whiteBorder"
+    >
       Qual o processo para a <span>receção</span> de encomendas?
     </Headline>
-    <ul>
-      <li>
-        <div>
-          <Step isStepGreen={false} stepNumber="1" />
-          <p class="text-medium color-slate-original">
-            Visualizar nº da encomenda na Guia de Entrega: PO Nº 4799999999
-          </p>
+    <ul class="block-list">
+      <li class="block-list-item">
+        <div class="block-list-item__wrapper first">
+          <div class="block-list-item__step-wrapper">
+            <Step
+              className="block-list-item__step"
+              isTextWhite={false}
+              isStepGreen={false}
+              stepNumber="1"
+            >
+              Visualizar nº da encomenda na Guia de Entrega: PO Nº 4799999999
+            </Step>
+            <Step
+              className="block-list-item__step"
+              isTextWhite={false}
+              isStepGreen={false}
+              stepNumber="2"
+            >
+              Clique em <strong>Pedidos de Stock</strong>
+            </Step>
+          </div>
+          <picture class="block-picture p-left-mobile">
+            <source
+              srcset="../imgs/reception-step1.png"
+              type="image/webp"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="../imgs/reception-step1-mobile.png"
+              type="image/png"
+              media="(min-width: 576px)"
+            />
+            <img
+              src="../imgs/reception-step1-mobile.png"
+              alt="reception-step1"
+            />
+          </picture>
         </div>
-        <div>
-          <Step isStepGreen={false} stepNumber="2" />
-          <p class="text-medium color-slate-original">
-            Clique em Pedidos de Stock
-          </p>
-        </div>
-        <img src="" alt="" />
       </li>
-      <li>
-        <div>
-          <Step isStepGreen={false} stepNumber="3" />
-          <p class="text-medium color-slate-original">
-            Selecione nº da encomenda que consta na guia de entrega
-          </p>
+      <li class="block-list-item">
+        <div class="block-list-item__wrapper second">
+          <Step
+            className="block-list-item__step"
+            isTextWhite={false}
+            isStepGreen={false}
+            stepNumber="3"
+          >
+            Selecione <strong> nº da encomenda</strong> que consta na guia de entrega
+          </Step>
+          <picture class="block-picture p-right-mobile">
+            <source
+              srcset="../imgs/reception-step3.png"
+              type="image/webp"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="../imgs/reception-step3-mobile.png"
+              type="image/png"
+              media="(min-width: 576px)"
+            />
+            <img
+              src="../imgs/reception-step3-mobile.png"
+              alt="reception-step3"
+            />
+          </picture>
         </div>
-
-        <img src="" alt="" />
       </li>
-      <li>
-        <div>
-          <Step isStepGreen={false} stepNumber="4" />
-          <p class="text-medium color-slate-original">
-            Clique em Rececionar Encomenda
-          </p>
+      <li class="block-list-item">
+        <div class="block-list-item__wrapper third">
+          <Step
+            className="block-list-item__step"
+            isTextWhite={false}
+            isStepGreen={false}
+            stepNumber="4"
+          >
+            Clique em <strong>Rececionar Encomenda</strong>
+          </Step>
+          <picture class="block-picture p-right-mobile">
+            <source
+              srcset="../imgs/reception-step4.png"
+              type="image/webp"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="../imgs/reception-step4-mobile.png"
+              type="image/png"
+              media="(min-width: 576px)"
+            />
+            <img
+              src="../imgs/reception-step4-mobile.png"
+              alt="reception-step4"
+            />
+          </picture>
         </div>
-        <img src="" alt="" />
       </li>
-      <li>
-        <div>
-          <Step isStepGreen={false} stepNumber="5" />
-          <p class="text-medium color-slate-original">
-            Se a encomenda que recebeu fisicamente, estiver de acordo com o que consta no sistema, clicar em Aceitar Caso não esteja de acordo com o que consta no sistema, clicar em Reportar Erro
-          </p>
+      <li class="block-list-item">
+        <div class="block-list-item__wrapper fourth">
+          <Step
+            className="block-list-item__step big"
+            isTextWhite={false}
+            isStepGreen={false}
+            stepNumber="5"
+          >
+            Se a encomenda que recebeu fisicamente, estiver de acordo com o que
+            consta no sistema, clicar em <strong>Aceitar</strong><br />
+            <br />Caso não esteja de acordo com o que consta no sistema, clicar
+            em <strong>Reportar Erro</strong>
+          </Step>
+          <picture class="block-picture p-right-mobile">
+            <source
+              srcset="../imgs/reception-step5.png"
+              type="image/webp"
+              media="(min-width: 1024px)"
+            />
+            <source
+              srcset="../imgs/reception-step5-mobile.png"
+              type="image/png"
+              media="(min-width: 576px)"
+            />
+            <img
+              src="../imgs/reception-step5-mobile.png"
+              alt="reception-step5"
+            />
+          </picture>
         </div>
-        <img src="" alt="" />
       </li>
     </ul>
   </article>
 </section>
+
+<style>
+  .block {
+    width: 100%;
+    padding-top: 12rem;
+    padding-bottom: 17rem;
+  }
+
+  .block-headline {
+    max-width: 33rem;
+    margin: 0 auto 11rem auto;
+  }
+
+  .block-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18rem;
+  }
+
+  .block-list-item__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .block-list-item__step-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .block-picture img {
+    width: 100%;
+  }
+
+  .block-list-item__step {
+    padding: 0 4%;
+    max-width: 65%;
+  }
+
+  .block-list-item__step.big {
+    max-width: 90%;
+  }
+
+  .p-right-mobile {
+    padding-right: 4%;
+  }
+
+  .p-left-mobile {
+    padding-left: 4%;
+  }
+
+  @media screen and (min-width: 48em) {
+    .block-headline {
+      max-width: 55rem;
+      margin-bottom: 21rem;
+    }
+    .block {
+      padding-top: 22rem;
+      padding-bottom: 22rem;
+    }
+
+    .block-list {
+      gap: 23.5rem;
+    }
+
+    .block-list-item__step {
+      max-width: 50rem;
+    }
+
+    .block-list-item__step.big {
+      max-width: 70rem;
+    }
+  }
+
+  @media screen and (min-width: 75em) {
+    .block-article {
+      padding: 0 12rem;
+    }
+    .block-headline {
+      max-width: 79rem;
+    }
+
+    .block-list-item__wrapper {
+      flex-direction: row;
+      gap: 10rem;
+    }
+
+    .block-list {
+      max-width: 120rem;
+      margin: 0 auto;
+    }
+
+    .block-list-item__step {
+      padding: 0;
+      max-width: 38.6rem;
+    }
+
+    .block-list-item__step.big {
+      max-width: 38.6rem;
+    }
+    .second {
+      flex-direction: row-reverse;
+    }
+
+    .fourth {
+      flex-direction: row-reverse;
+    }
+
+    .p-right-mobile {
+      padding-right: 0;
+    }
+
+    .p-left-mobile {
+      padding-left: 0;
+    }
+  }
+</style>

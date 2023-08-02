@@ -40,7 +40,7 @@ const {
 <style>
   .step-wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
     gap: 1.4rem;
   }
 
@@ -49,9 +49,10 @@ const {
   }
 
   .step {
+    width: 5.5rem;
+    height: 5.2rem;
     background-color: var(--soft-white-original);
     border-radius: 1rem;
-    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +74,8 @@ const {
 
   @media screen and (min-width: 48em) {
     .step {
-      padding: 1.4rem 3rem;
+      width: 7.5rem;
+      height: 7.6rem;
     }
 
     .step-wrapper {
