@@ -2,44 +2,300 @@
 import Step from "./shared/Step.astro";
 ---
 
-<section class="background-slate-original">
-  <article>
-    <ul>
-      <li>
-        <div>
-          <Step isTextWhite isStepGreen={false} stepNumber="3">
-            Verifique o SMS do Consumidor e clique em Pedidos de Troca
-            Reservados
+<section class="block background-slate-original">
+  <article class="block-article">
+    <ul class="block-list">
+      <li class="block-list-item">
+        <div class="block-list-item__wrapper first">
+          <Step
+            className="block-list-item__step"
+            isTextWhite
+            isStepGreen
+            stepNumber="3"
+          >
+            Verifique o SMS do Consumidor e clique em <strong>
+              Pedidos de Troca Reservados</strong
+            >
           </Step>
+          <picture class="block-picture p-right-mobile">
+            <source
+              srcset="../imgs/retail-step3.png"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              srcset="../imgs/retail-step3-mobile.png"
+              type="image/png"
+              media="(min-width: 48em)"
+            />
+            <img src="../imgs/retail-step3-mobile.png" alt="retail-step1" />
+          </picture>
         </div>
-        <img src="" alt="" />
       </li>
-      <li>
-        <div>
-          <Step isTextWhite isStepGreen={false} stepNumber="4">
+      <li class="block-list-item">
+        <div class="block-list-item__wrapper flex-column">
+          <div class="block-step-wrapper">
+            <Step
+              className="block-list-item__step"
+              isTextWhite
+              isStepGreen
+              stepNumber="4"
+            >
+              Pesquise pelo <strong> nº do pedido</strong> e selecione <strong
+                >Pedido de Troca</strong
+              > correspondente
+            </Step>
+            <p
+              class="block-text block-text-desktop-only font-family-regular color-soft-white-original"
+            >
+              Se o consumidor não se dirigir ao ponto de troca, após 48h da
+              criação do pedido, o pedido fica <span>Expirado</span>
+            </p>
+          </div>
+
+          <picture class="block-picture p-mobile">
+            <source
+              srcset="../imgs/retail-step4.png"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              srcset="../imgs/retail-step4-mobile.png"
+              type="image/png"
+              media="(min-width: 48em)"
+            />
+            <img src="../imgs/retail-step4-mobile.png" alt="retail-step3" />
+          </picture>
+          <p
+            class="block-text block-text-mobile-only font-family-regular color-soft-white-original"
+          >
             Se o consumidor não se dirigir ao ponto de troca, após 48h da
-            criação do pedido, o pedido fica Expirado
-          </Step>
+            criação do pedido, o pedido fica <span>Expirado</span>
+          </p>
         </div>
-        <img src="" alt="" />
       </li>
-      <li>
-        <div>
-          <Step isTextWhite isStepGreen={false} stepNumber="5">
-            Clique em Finalizar
+      <li class="block-list-item">
+        <div class="block-list-item__wrapper row-reverse">
+          <Step
+            className="block-list-item__step"
+            isTextWhite
+            isStepGreen
+            stepNumber="5"
+          >
+            Clique em <strong>Finalizar</strong>
           </Step>
+          <picture class="block-picture p-right-mobile">
+            <source
+              srcset="../imgs/retail-step5.png"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              srcset="../imgs/retail-step5-mobile.png"
+              type="image/png"
+              media="(min-width: 48em)"
+            />
+            <img src="../imgs/retail-step5-mobile.png" alt="retail-step4" />
+          </picture>
         </div>
-        <img src="" alt="" />
       </li>
-      <li>
-        <div>
-          <Step isTextWhite isStepGreen={false} stepNumber="6">
+      <li class="block-list-item">
+        <div class="block-list-item__wrapper">
+          <Step
+            className="block-list-item__step"
+            isTextWhite
+            isStepGreen
+            stepNumber="6"
+          >
             Insira o código do equipamento, que vamos entregar ao consumidor, e
-            clique em Aceitar
+            clique em <strong>Aceitar</strong>
           </Step>
+          <picture class="block-picture p-right-mobile">
+            <source
+              srcset="../imgs/retail-step6.png"
+              type="image/webp"
+              media="(min-width: 75em)"
+            />
+            <source
+              srcset="../imgs/retail-step6-mobile.png"
+              type="image/png"
+              media="(min-width: 48em)"
+            />
+            <img src="../imgs/retail-step6-mobile.png" alt="retail-step5" />
+          </picture>
         </div>
-        <img src="" alt="" />
       </li>
     </ul>
   </article>
 </section>
+
+<style>
+  .block {
+    width: 100%;
+    padding-top: 14rem;
+    padding-bottom: 17rem;
+  }
+
+  .block-headline {
+    max-width: 33rem;
+    margin: 0 auto 11rem auto;
+  }
+
+  .block-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18rem;
+  }
+
+  .block-list-item__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-picture img {
+    width: 100%;
+  }
+
+  .block-list-item__step {
+    padding: 0 4%;
+    max-width: 70%;
+    margin-bottom: 5rem;
+  }
+
+  .block-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0 4%;
+    max-width: 70%;
+    margin-top: 3rem;
+  }
+
+  .block-text span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  .block-text > span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.1rem;
+    height: 0.25rem;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--red-original);
+  }
+
+  .block-text-desktop-only {
+    display: none;
+  }
+
+  .block-step-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+
+  .p-right-mobile {
+    padding-right: 4%;
+  }
+
+  .p-left-mobile {
+    padding-left: 4%;
+  }
+
+  .p-mobile {
+    padding: 0 4%;
+  }
+
+  @media screen and (min-width: 48em) {
+    .block-headline {
+      max-width: 55rem;
+      margin-bottom: 21rem;
+    }
+    .block {
+      padding-top: 22rem;
+      padding-bottom: 25rem;
+    }
+
+    .block-list {
+      gap: 23.5rem;
+    }
+
+    .block-list-item__step {
+      max-width: 50rem;
+    }
+
+    .block-text {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      max-width: 50rem;
+    }
+  }
+
+  @media screen and (min-width: 75em) {
+    .block-article {
+      padding: 0 12rem;
+    }
+    .block-headline {
+      max-width: 79rem;
+    }
+
+    .block-list-item__wrapper {
+      flex-direction: row;
+      column-gap: 10rem;
+      row-gap: 5rem;
+    }
+
+    .block-list {
+      max-width: 120rem;
+      margin: 0 auto;
+    }
+
+    .block-list-item__step {
+      padding: 0;
+      max-width: 38.6rem;
+    }
+
+    .flex-column > .block-list-item__step {
+      max-width: 51rem;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .p-right-mobile {
+      padding-right: 0;
+    }
+
+    .p-left-mobile {
+      padding-left: 0;
+    }
+
+    .p-mobile {
+      padding: 0;
+    }
+
+    .block-text {
+      padding: 0;
+      max-width: 46rem;
+      margin-top: 0;
+    }
+
+    .block-text-mobile-only {
+      display: none;
+    }
+
+    .block-text-desktop-only {
+      display: block;
+    }
+  }
+</style>
