@@ -9,6 +9,7 @@
       viewBox="0 0 286 306"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      class="footer-logo"
       data-gsap="fade-up"
     >
       <g clip-path="url(#clip0_244_52)">
@@ -100,25 +101,47 @@
     padding: 13.4rem 4% 7.6rem 4%;
   }
 
+  .footer-logo {
+    width: 14rem;
+    height: 15rem;
+  }
+
   .footer-content {
     margin-top: 12.6rem;
   }
 
   .footer-text {
-    font-size: 2rem;
-    line-height: 2.8rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 
+  @media screen and (min-width: 22.5em) {
+    .footer-article {
+      padding: 13.4rem 0 7.6rem 0;
+      max-width: 36rem;
+      margin: 0 auto;
+    }
+  }
   @media screen and (min-width: 48em) {
     .footer-article {
       padding-top: 26.7rem;
       padding-left: 0;
       padding-right: 0;
-      max-width: 70rem;
+      max-width: 80rem;
+    }
+
+    .footer-logo {
+      width: auto;
+      height: auto;
     }
 
     .footer-content {
       margin-top: 13.5rem;
+    }
+
+    .footer-text {
+      font-size: 2rem;
+      line-height: 2.8rem;
     }
   }
 </style>
