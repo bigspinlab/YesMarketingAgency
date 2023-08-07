@@ -38,7 +38,7 @@ const { isHeadlineWhite = false, borderColor, className } = Astro.props;
     content: "";
     position: absolute;
     left: 0;
-    bottom: -0.2rem;
+    bottom: -0.5rem;
     height: .5rem;
     width: 100%;
     z-index: -1;
@@ -62,5 +62,11 @@ const { isHeadlineWhite = false, borderColor, className } = Astro.props;
 
   .slateOriginalBorder > span::after {
     background-color: var(--slate-original);
+  }
+
+  @media screen and (min-width: 48em) {
+    .headline > span::after {
+      height: 0.8rem;
+    }
   }
 </style>
