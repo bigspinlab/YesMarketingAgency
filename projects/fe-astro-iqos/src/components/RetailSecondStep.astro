@@ -6,7 +6,11 @@ import Step from "./shared/Step.astro";
   <article class="block-article">
     <ul class="block-list">
       <li class="block-list-item">
-        <div class="block-list-item__wrapper first" data-gsap="fade-up" data-gsap-delay="100">
+        <div
+          class="block-list-item__wrapper first"
+          data-gsap="fade-up"
+          data-gsap-delay="100"
+        >
           <Step
             className="block-list-item__step"
             isTextWhite
@@ -33,7 +37,11 @@ import Step from "./shared/Step.astro";
         </div>
       </li>
       <li class="block-list-item">
-        <div class="block-list-item__wrapper flex-column" data-gsap="fade-up" data-gsap-delay="200">
+        <div
+          class="block-list-item__wrapper flex-column"
+          data-gsap="fade-up"
+          data-gsap-delay="200"
+        >
           <div class="block-step-wrapper">
             <Step
               className="block-list-item__step"
@@ -75,7 +83,11 @@ import Step from "./shared/Step.astro";
         </div>
       </li>
       <li class="block-list-item">
-        <div class="block-list-item__wrapper row-reverse" data-gsap="fade-up" data-gsap-delay="300">
+        <div
+          class="block-list-item__wrapper row-reverse"
+          data-gsap="fade-up"
+          data-gsap-delay="300"
+        >
           <Step
             className="block-list-item__step"
             isTextWhite
@@ -100,7 +112,11 @@ import Step from "./shared/Step.astro";
         </div>
       </li>
       <li class="block-list-item">
-        <div class="block-list-item__wrapper" data-gsap="fade-up" data-gsap-delay="400">
+        <div
+          class="block-list-item__wrapper"
+          data-gsap="fade-up"
+          data-gsap-delay="400"
+        >
           <Step
             className="block-list-item__step"
             isTextWhite
@@ -182,7 +198,7 @@ import Step from "./shared/Step.astro";
     position: absolute;
     left: 0;
     bottom: -0.1rem;
-    height: 0.25rem;
+    height: 0.15rem;
     width: 100%;
     z-index: -1;
     background-color: var(--red-original);
@@ -258,6 +274,11 @@ import Step from "./shared/Step.astro";
     .block-list-item__step {
       padding: 0;
       max-width: 38.6rem;
+    }
+
+    .block-text > span::after {
+      bottom: -0.1rem;
+      height: 0.25rem;
     }
 
     .flex-column > .block-list-item__step {

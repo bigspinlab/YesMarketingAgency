@@ -18,7 +18,8 @@ import IconHouse from "./Icons/IconHouse.astro";
     <div class="masthead-content-wrapper">
       <p
         class="masthead-content__text text text-align-center color-soft-white-original"
-        data-gsap="fade-up" data-gsap-delay="300"
+        data-gsap="fade-up"
+        data-gsap-delay="300"
       >
         As trocas são solicitadas pelo <span>consumidor</span> através dos canais
         de suporte
@@ -38,7 +39,11 @@ import IconHouse from "./Icons/IconHouse.astro";
             Através do site, na área de ajuda
           </p>
         </li>
-        <li class="masthead-list__item" data-gsap="fade-in" data-gsap-delay="100">
+        <li
+          class="masthead-list__item"
+          data-gsap="fade-in"
+          data-gsap-delay="100"
+        >
           <IconChat />
           <h3
             class="text text-align-center font-family-bold color-slate-original"
@@ -49,7 +54,11 @@ import IconHouse from "./Icons/IconHouse.astro";
             Disponível das 09h-00h no canto inferior direito do site iqos.pt
           </p>
         </li>
-        <li class="masthead-list__item" data-gsap="fade-in" data-gsap-delay="200">
+        <li
+          class="masthead-list__item"
+          data-gsap="fade-in"
+          data-gsap-delay="200"
+        >
           <IconThumbUp />
           <h3
             class="text text-align-center font-family-bold color-slate-original"
@@ -60,7 +69,11 @@ import IconHouse from "./Icons/IconHouse.astro";
             Chat disponível das 09h-00h na página de apoio ao cliente
           </p>
         </li>
-        <li class="masthead-list__item" data-gsap="fade-in" data-gsap-delay="300">
+        <li
+          class="masthead-list__item"
+          data-gsap="fade-in"
+          data-gsap-delay="300"
+        >
           <IconRingPhone />
           <h3
             class="text text-align-center font-family-bold color-slate-original"
@@ -141,8 +154,8 @@ import IconHouse from "./Icons/IconHouse.astro";
     content: "";
     position: absolute;
     left: 0;
-    bottom: -0.2rem;
-    height: 0.5rem;
+    bottom: -0.1rem;
+    height: 0.3rem;
     width: 100%;
     z-index: -1;
     background-color: var(--slate-original);
@@ -194,6 +207,11 @@ import IconHouse from "./Icons/IconHouse.astro";
     .masthead-content__text {
       max-width: 69rem;
       margin: 0 auto 8rem auto;
+    }
+
+    .masthead-content__text > span::after {
+      bottom: -0.2rem;
+      height: 0.5rem;
     }
 
     .masthead-list {
