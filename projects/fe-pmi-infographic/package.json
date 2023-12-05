@@ -31,7 +31,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
     "path": "^0.12.7",
-    "postcss": "^8.4.25",
+    "postcss": "^8.4.31",
     "sass": "^1.63.6"
   },
   "browserslist": [
